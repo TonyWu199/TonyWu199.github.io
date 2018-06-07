@@ -7,17 +7,17 @@
   
   <title>环境配置篇-Ubuntu16.04下配置Docker和Go语言 | TonyWu199的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装  用apt-get install和手动安装都可   2. 安装docker和docker-compose1.下载文件的url">
+  <meta name="description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装 用apt-get install和手动安装都可  2. 安装docker和docker-compose1.下载文件的url htt">
 <meta property="og:type" content="article">
 <meta property="og:title" content="环境配置篇-Ubuntu16.04下配置Docker和Go语言">
 <meta property="og:url" content="http://yoursite.com/2018/06/08/环境配置篇-Ubuntu16.04下配置Docker和Go语言/index.html">
 <meta property="og:site_name" content="TonyWu199的博客">
-<meta property="og:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装  用apt-get install和手动安装都可   2. 安装docker和docker-compose1.下载文件的url">
+<meta property="og:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装 用apt-get install和手动安装都可  2. 安装docker和docker-compose1.下载文件的url htt">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-07T17:42:44.095Z">
+<meta property="og:updated_time" content="2018-06-07T17:45:13.452Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="环境配置篇-Ubuntu16.04下配置Docker和Go语言">
-<meta name="twitter:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装  用apt-get install和手动安装都可   2. 安装docker和docker-compose1.下载文件的url">
+<meta name="twitter:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装 用apt-get install和手动安装都可  2. 安装docker和docker-compose1.下载文件的url htt">
   
     <link rel="alternate" href="/atom.xml" title="TonyWu199的博客" type="application/atom+xml">
   
@@ -67,7 +67,7 @@
         <section id="main"><article id="post-环境配置篇-Ubuntu16.04下配置Docker和Go语言" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/06/08/环境配置篇-Ubuntu16.04下配置Docker和Go语言/" class="article-date">
-  <time datetime="2018-06-07T17:42:40.609Z" itemprop="datePublished">2018-06-08</time>
+  <time datetime="2018-06-07T17:45:09.780Z" itemprop="datePublished">2018-06-08</time>
 </a>
     
   </div>
@@ -90,21 +90,16 @@
 <hr>
 <h2 id="1-安装curl"><a href="#1-安装curl" class="headerlink" title="1. 安装curl"></a>1. 安装curl</h2><p>1.以下两个指令用于安装openssl</p>
 <pre><code>$sudo1 apt-get install openssl
-</code></pre><p>$sudo apt-get isntall libssl-dev</p>
-<p>2.下载curl包并安装</p>
-<blockquote>
-<p>用apt-get install和手动安装都可</p>
-</blockquote>
-<hr>
+$sudo apt-get isntall libssl-dev
+</code></pre><p>2.下载curl包并安装</p>
+<pre><code>用apt-get install和手动安装都可
+</code></pre><hr>
 <h2 id="2-安装docker和docker-compose"><a href="#2-安装docker和docker-compose" class="headerlink" title="2. 安装docker和docker-compose"></a>2. 安装docker和docker-compose</h2><p>1.下载文件的url</p>
-<blockquote>
-<p><a href="https://download.docker.com/linux/ubuntu/dists/" target="_blank" rel="noopener">https://download.docker.com/linux/ubuntu/dists/</a></p>
-</blockquote>
-<p>2.解压验证docker是否安装成功</p>
-<blockquote>
-<p>\$sudo dpkg -i /DebFile<br>\$sudo docker run hello-world</p>
-</blockquote>
-<p>3.安装docker-compose</p>
+<pre><code>https://download.docker.com/linux/ubuntu/dists/
+</code></pre><p>2.解压验证docker是否安装成功</p>
+<pre><code>$sudo dpkg -i /DebFile
+$sudo docker run hello-world
+</code></pre><p>3.安装docker-compose</p>
 <blockquote>
 <p>\$sudo curl -L <a href="https://github.com/docker/compose/releases/download/1.21.0/docker-compose-\$" target="_blank" rel="noopener">https://github.com/docker/compose/releases/download/1.21.0/docker-compose-\$</a>(uname -s)-\$(uname -m) -o /usr/local/bin/docker-compose<br>\$sudo chmod +x /usr/local/bin/docker-compose</p>
 </blockquote>
@@ -127,7 +122,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/08/环境配置篇-Ubuntu16.04下配置Docker和Go语言/" data-id="cji4tydkh0001xgtia34k4bhp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/06/08/环境配置篇-Ubuntu16.04下配置Docker和Go语言/" data-id="cji4u1fmk0000w4tiuxjjrwoo" class="article-share-link">Share</a>
       
       
     </footer>
