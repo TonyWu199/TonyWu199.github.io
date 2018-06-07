@@ -7,17 +7,17 @@
   
   <title>环境配置篇-Ubuntu16.04下配置Docker和Go语言 | TonyWu199的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  ##1. 安装curl1.以下两个指令用于安装openssl  \$sudo apt-get install openssl\$sudo apt-get isntall libssl-dev  2.下载curl包并安装    用apt-get install和手动安装都可  ##2. 安装docker和docker-compose1.下载文">
+  <meta name="description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl  \$sudo apt-get install openssl\$sudo apt-get isntall libssl-dev  2.下载curl包并安装    用apt-get install和手动安装都可  2. 安装docker和docker-compose1.下载文件的ur">
 <meta property="og:type" content="article">
 <meta property="og:title" content="环境配置篇-Ubuntu16.04下配置Docker和Go语言">
 <meta property="og:url" content="http://yoursite.com/2018/06/08/环境配置篇-Ubuntu16.04下配置Docker和Go语言/index.html">
 <meta property="og:site_name" content="TonyWu199的博客">
-<meta property="og:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  ##1. 安装curl1.以下两个指令用于安装openssl  \$sudo apt-get install openssl\$sudo apt-get isntall libssl-dev  2.下载curl包并安装    用apt-get install和手动安装都可  ##2. 安装docker和docker-compose1.下载文">
+<meta property="og:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl  \$sudo apt-get install openssl\$sudo apt-get isntall libssl-dev  2.下载curl包并安装    用apt-get install和手动安装都可  2. 安装docker和docker-compose1.下载文件的ur">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-07T17:13:49.608Z">
+<meta property="og:updated_time" content="2018-06-07T17:26:12.524Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="环境配置篇-Ubuntu16.04下配置Docker和Go语言">
-<meta name="twitter:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  ##1. 安装curl1.以下两个指令用于安装openssl  \$sudo apt-get install openssl\$sudo apt-get isntall libssl-dev  2.下载curl包并安装    用apt-get install和手动安装都可  ##2. 安装docker和docker-compose1.下载文">
+<meta name="twitter:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl  \$sudo apt-get install openssl\$sudo apt-get isntall libssl-dev  2.下载curl包并安装    用apt-get install和手动安装都可  2. 安装docker和docker-compose1.下载文件的ur">
   
     <link rel="alternate" href="/atom.xml" title="TonyWu199的博客" type="application/atom+xml">
   
@@ -67,7 +67,7 @@
         <section id="main"><article id="post-环境配置篇-Ubuntu16.04下配置Docker和Go语言" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/06/08/环境配置篇-Ubuntu16.04下配置Docker和Go语言/" class="article-date">
-  <time datetime="2018-06-07T17:13:36.310Z" itemprop="datePublished">2018-06-08</time>
+  <time datetime="2018-06-07T17:26:08.429Z" itemprop="datePublished">2018-06-08</time>
 </a>
     
   </div>
@@ -88,13 +88,13 @@
       
         <p>安装环境：Ubuntu 16.04<br>GO语言版本：1.9</p>
 <hr>
-<p>##1. 安装curl<br>1.以下两个指令用于安装openssl</p>
+<h2 id="1-安装curl"><a href="#1-安装curl" class="headerlink" title="1. 安装curl"></a>1. 安装curl</h2><p>1.以下两个指令用于安装openssl</p>
 <blockquote>
 <p>\$sudo apt-get install openssl<br>\$sudo apt-get isntall libssl-dev</p>
 </blockquote>
 <p>2.下载curl包并安装<br>    用apt-get install和手动安装都可</p>
 <hr>
-<p>##2. 安装docker和docker-compose<br>1.下载文件的url</p>
+<h2 id="2-安装docker和docker-compose"><a href="#2-安装docker和docker-compose" class="headerlink" title="2. 安装docker和docker-compose"></a>2. 安装docker和docker-compose</h2><p>1.下载文件的url</p>
 <blockquote>
 <p><a href="https://download.docker.com/linux/ubuntu/dists/" target="_blank" rel="noopener">https://download.docker.com/linux/ubuntu/dists/</a></p>
 </blockquote>
@@ -107,7 +107,7 @@
 <p>\$sudo curl -L <a href="https://github.com/docker/compose/releases/download/1.21.0/docker-compose-\$" target="_blank" rel="noopener">https://github.com/docker/compose/releases/download/1.21.0/docker-compose-\$</a>(uname -s)-\$(uname -m) -o /usr/local/bin/docker-compose<br>\$sudo chmod +x /usr/local/bin/docker-compose</p>
 </blockquote>
 <hr>
-<p>##3.安装go语言<br>1.命令行一口气安装go语言</p>
+<h2 id="3-安装go语言"><a href="#3-安装go语言" class="headerlink" title="3.安装go语言"></a>3.安装go语言</h2><p>1.命令行一口气安装go语言</p>
 <blockquote>
 <p>\$ curl -O <a href="https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz" target="_blank" rel="noopener">https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz</a><br>\$ tar -C /usr/local -zxvf go1.9.linux-amd64.tar.gz<br>\$ mkdir -p ~/go/src<br>\$ echo “export GOPATH=\$HOME/go” &gt;&gt; ~/.bashrc<br>\$ echo “export PATH=\$PATH:\$GOPATH/bin:/usr/local/go/bin” &gt;&gt; ~/.bashrc<br>\$ source ~/.bashrc<br>\$ go version</p>
 </blockquote>
@@ -119,8 +119,7 @@
 <blockquote>
 <p># go build –tags nopkcs11<br># sudo apt install libtool libltdl-dev</p>
 </blockquote>
-<p>##4. 下载docker镜像和fabric的可执行文件</p>
-<p><em>文件s.sh</em></p>
+<h2 id="4-下载docker镜像和fabric的可执行文件"><a href="#4-下载docker镜像和fabric的可执行文件" class="headerlink" title="4. 下载docker镜像和fabric的可执行文件"></a>4. 下载docker镜像和fabric的可执行文件</h2><p><em>文件s.sh</em></p>
 <pre><code>#!/bin/bash
 # Copyright IBM Corp. All Rights Reserved.
 # SPDX-License-Identifier: Apache-2.0
@@ -171,7 +170,7 @@ docker images | grep hyperledger*</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/08/环境配置篇-Ubuntu16.04下配置Docker和Go语言/" data-id="cji4sx3zz00001ctisfcgfm2d" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/06/08/环境配置篇-Ubuntu16.04下配置Docker和Go语言/" data-id="cji4td3xo0001e8tiuqlx139x" class="article-share-link">Share</a>
       
       
     </footer>
