@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="TonyWu199的博客">
 <meta property="og:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装 用apt-get install和手动安装都可">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-08T10:00:56.327Z">
+<meta property="og:updated_time" content="2018-06-08T10:03:05.818Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="环境配置篇-Ubuntu16.04下配置Docker和Go语言">
 <meta name="twitter:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装 用apt-get install和手动安装都可">
@@ -375,19 +375,6 @@ sudo apt install libtool libltdl-dev
         </div>
         
         
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装curl"><span class="toc-number">1.</span> <span class="toc-text">1. 安装curl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-安装docker和docker-compose"><span class="toc-number">2.</span> <span class="toc-text">2. 安装docker和docker-compose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-安装go语言"><span class="toc-number">3.</span> <span class="toc-text">3.安装go语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-下载docker镜像和fabric的可执行文件"><span class="toc-number">4.</span> <span class="toc-text">4. 下载docker镜像和fabric的可执行文件</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
     </div>
 </aside>
 
@@ -404,34 +391,6 @@ sudo apt install libtool libltdl-dev
   
 
 
-<!-- 目录内容 -->
-    
-        <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
-        <span class="btn-bg"></span>
-        <span class="btn-text">文章导航</span>
-        </p>
-        <div id="toc-article" class="toc-article">
-            <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
-            <strong class="toc-title">文章目录</strong>
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装curl"><span class="toc-number">1.</span> <span class="toc-text">1. 安装curl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-安装docker和docker-compose"><span class="toc-number">2.</span> <span class="toc-text">2. 安装docker和docker-compose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-安装go语言"><span class="toc-number">3.</span> <span class="toc-text">3.安装go语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-下载docker镜像和fabric的可执行文件"><span class="toc-number">4.</span> <span class="toc-text">4. 下载docker镜像和fabric的可执行文件</span></a></li></ol>
-       </div>
-       <script type="text/javascript">
-        function showToc(){
-            var toc_article = document.getElementById("toc-article");
-            var show_toc_btn = document.getElementById("show-toc-btn");
-            toc_article.setAttribute("style","display:block");
-            show_toc_btn.setAttribute("style","display:none");
-            };
-        function showBtn(){
-            var toc_article = document.getElementById("toc-article");
-            var show_toc_btn = document.getElementById("show-toc-btn");
-            toc_article.setAttribute("style","display:none");
-            show_toc_btn.setAttribute("style","display:block");
-            };
-       </script>
-         
-<!-- 目录内容结束 -->
-
           </div>
         </div>
       </div>
@@ -441,6 +400,16 @@ sudo apt install libtool libltdl-dev
     	<div class="footer-left">
     		&copy; 2018 TonyWu199
     	</div>
+       <!--统计start-->
+      <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+      </script>
+      <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </span>
+      <span id="busuanzi_container_site_uv">
+  总访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
+      <!--统计end-->
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div>
