@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>如何搭建我的github+hexo博客 | Mr.Wu的博客</title>
+  <title>算法:a+b大数加法 | Mr.Wu的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="花费大约一小时按照教程完成了此博客的搭建。这里将会不定期记录一些自己在过去的学习经验和目前正在学习的知识，起到一个总结和回顾的作用。">
-<meta name="keywords" content="github,个人博客">
+  <meta name="description" content="华中科技大学考研复试 1.前期思路&amp;#160; 因为此算法在以前的《算法设计与分析》课程上写过，所以觉得很简单，殊不知自己的算法异常的复杂难写。再一次复现的时候即出现了错误，导致程序无法在牛客网上运行通过。&amp;#160; 原来的想法主要有两个冗杂的地方：   原来的大体思想是建立a,b,c三个字符串数组，然后将a,b逆序成对应的逆序字符串数组，再在运算过程中进行-‘0’操作转换 建立了三个字符串数组">
+<meta name="keywords" content="算法基础,c语言">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何搭建我的github+hexo博客">
-<meta property="og:url" content="http://yoursite.com/2018/05/14/引言/index.html">
+<meta property="og:title" content="算法:a+b大数加法">
+<meta property="og:url" content="http://yoursite.com/2018/07/25/算法-a+b之大数加法/index.html">
 <meta property="og:site_name" content="Mr.Wu的博客">
-<meta property="og:description" content="花费大约一小时按照教程完成了此博客的搭建。这里将会不定期记录一些自己在过去的学习经验和目前正在学习的知识，起到一个总结和回顾的作用。">
+<meta property="og:description" content="华中科技大学考研复试 1.前期思路&amp;#160; 因为此算法在以前的《算法设计与分析》课程上写过，所以觉得很简单，殊不知自己的算法异常的复杂难写。再一次复现的时候即出现了错误，导致程序无法在牛客网上运行通过。&amp;#160; 原来的想法主要有两个冗杂的地方：   原来的大体思想是建立a,b,c三个字符串数组，然后将a,b逆序成对应的逆序字符串数组，再在运算过程中进行-‘0’操作转换 建立了三个字符串数组">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-08T09:35:25.456Z">
+<meta property="og:updated_time" content="2018-07-25T03:16:05.724Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何搭建我的github+hexo博客">
-<meta name="twitter:description" content="花费大约一小时按照教程完成了此博客的搭建。这里将会不定期记录一些自己在过去的学习经验和目前正在学习的知识，起到一个总结和回顾的作用。">
+<meta name="twitter:title" content="算法:a+b大数加法">
+<meta name="twitter:description" content="华中科技大学考研复试 1.前期思路&amp;#160; 因为此算法在以前的《算法设计与分析》课程上写过，所以觉得很简单，殊不知自己的算法异常的复杂难写。再一次复现的时候即出现了错误，导致程序无法在牛客网上运行通过。&amp;#160; 原来的想法主要有两个冗杂的地方：   原来的大体思想是建立a,b,c三个字符串数组，然后将a,b逆序成对应的逆序字符串数组，再在运算过程中进行-‘0’操作转换 建立了三个字符串数组">
   
   
     <link rel="icon" href="/favicon.png">
@@ -143,28 +143,46 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-引言" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-算法-a+b之大数加法" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      如何搭建我的github+hexo博客
+      算法:a+b大数加法
     </h1>
   
 
         
-        <a href="/2018/05/14/引言/" class="archive-article-date">
-  	<time datetime="2018-05-14T12:01:09.366Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-14</time>
+        <a href="/2018/07/25/算法-a+b之大数加法/" class="archive-article-date">
+  	<time datetime="2018-07-25T02:49:54.956Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>花费大约一小时按照<a href="https://www.jianshu.com/p/189fd945f38f" target="_blank" rel="noopener">教程</a>完成了此博客的搭建。<br>这里将会不定期记录一些自己在过去的学习经验和目前正在学习的知识，起到一个总结和回顾的作用。</p>
-
+        <p><a href="https://www.nowcoder.com/kaoyan/retest/11002?page=0" target="_blank" rel="noopener">华中科技大学考研复试</a></p>
+<h2 id="1-前期思路"><a href="#1-前期思路" class="headerlink" title="1.前期思路"></a>1.前期思路</h2><p>&#160; 因为此算法在以前的《算法设计与分析》课程上写过，所以觉得很简单，殊不知自己的算法异常的复杂难写。再一次复现的时候即出现了错误，导致程序无法在牛客网上运行通过。<br>&#160; 原来的想法主要有两个冗杂的地方：</p>
+<blockquote>
+<ol>
+<li>原来的大体思想是建立a,b,c三个字符串数组，然后将a,b逆序成对应的逆序字符串数组，再在运算过程中进行-‘0’操作转换</li>
+<li>建立了三个字符串数组，通过if语句三次判断来分三种情况讨论a,b两个字符串的长度，并将最终的结果写入了另一个字符串数组c中，造成了代码的冗余</li>
+</ol>
+</blockquote>
+<a id="more"></a>
+<hr>
+<h2 id="2-改进思路"><a href="#2-改进思路" class="headerlink" title="2.改进思路"></a>2.改进思路</h2><p>&#160; 在学习论坛上别人的方法之后，将自己的代码进行了改进。</p>
+<blockquote>
+<ol>
+<li>首先，将字符串逆序的思路是正确的，但是为什么不一次性逆序到位呢？直接将字符串数组逆序成对应的逆序整型数组不是更好更快吗?</li>
+<li>其次，为什么需要反复判断a,b的长度情况呢？直接将整型数组初始化为0，然后选择两者中最长的数组作为储存结果的数组不是更好吗？一来省去了多余的存储空间，二来抹去了多余的操作(对第三个数组的操作)</li>
+<li>具体的一些更细节的地方见完整代码，例如对最终数组长度的调整，之前用的是两个条件语句进行判断，这里就很妙，这样的思路也可以应用在很多地方。</li>
+</ol>
+</blockquote>
+<p>&#160; 修改之后的代码如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;stdio.h&gt;</span></span><br><span class="line"><span class="comment">#include &lt;string.h&gt;</span></span><br><span class="line"></span><br><span class="line">void inverse(char* str, int* digit)&#123;</span><br><span class="line">	int len = strlen(str);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(int i=len-1;i&gt;=0;i--)&#123;</span><br><span class="line">		digit[len-1-i] = str[i] - <span class="string">'0'</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">//	<span class="keyword">for</span>(int i=0; i&lt; len; i++)</span><br><span class="line">//	<span class="built_in">printf</span>(<span class="string">"%d"</span>, digit[i]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int <span class="function"><span class="title">main</span></span>()&#123;</span><br><span class="line">	char a[1000], b[1000];</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span>(scanf(<span class="string">"%s%s"</span>, a, b) != EOF)&#123;</span><br><span class="line">		int a_len = strlen(a);</span><br><span class="line">		int b_len = strlen(b);</span><br><span class="line">		int a_n[1000] = &#123;0&#125;;</span><br><span class="line">		int b_n[1000] = &#123;0&#125;;</span><br><span class="line">		</span><br><span class="line">		//先将字符串数组逆序成整型数组 </span><br><span class="line">		inverse(a, a_n);</span><br><span class="line">		inverse(b, b_n);</span><br><span class="line">		int len = a_len &gt;= b_len ? a_len : b_len;</span><br><span class="line">		</span><br><span class="line">		int flag = 0;</span><br><span class="line">		<span class="keyword">for</span>(int i=0; i&lt;len; i++)&#123;</span><br><span class="line">			int tmp = (a_n[i] + b_n[i] + flag) / 10;    //临时保存进位 </span><br><span class="line">			a_n[i] = (a_n[i] + b_n[i] + flag) % 10;</span><br><span class="line">			flag = tmp;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">if</span>(flag == 1)&#123;</span><br><span class="line">			a_n[len] = 1;</span><br><span class="line">			len++;   //这里妙啊 </span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line"></span><br><span class="line">		//将整型数组再次逆序输出 </span><br><span class="line">		<span class="keyword">for</span>(int i= len-1; i&gt;=0; i--)&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d"</span>,a_n[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -208,11 +226,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">算法基础</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">个人博客</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">c语言</a>
         		</li>
       		
 		</ul>
@@ -224,7 +242,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/环境配置//" class="article-tag-list-link color5">环境配置</a>
+        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
         		</li>
       		
 		</ul>
@@ -279,7 +297,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/05/14/引言/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/25/算法-a+b之大数加法/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -293,15 +311,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/06/08/环境配置篇-Ubuntu16.04下配置Docker和Go语言/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          环境配置篇-Ubuntu16.04下配置Docker和Go语言
-        
-      </div>
-    </a>
   
+    <a href="/2018/06/08/环境配置篇-Ubuntu16.04下配置Docker和Go语言/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">环境配置篇-Ubuntu16.04下配置Docker和Go语言</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -318,6 +332,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-前期思路"><span class="toc-number">1.</span> <span class="toc-text">1.前期思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-改进思路"><span class="toc-number">2.</span> <span class="toc-text">2.改进思路</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
@@ -336,6 +363,30 @@
 
 
  <!-- 目录内容 -->
+        
+            <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+            <span class="btn-bg"></span>
+            <span class="btn-text">文章导航</span>
+            </p>
+            <div id="toc-article" class="toc-article">
+                <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+                <strong class="toc-title">文章目录</strong>
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-前期思路"><span class="toc-number">1.</span> <span class="toc-text">1.前期思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-改进思路"><span class="toc-number">2.</span> <span class="toc-text">2.改进思路</span></a></li></ol>
+           </div>
+           <script type="text/javascript">
+            function showToc(){
+                var toc_article = document.getElementById("toc-article");
+                var show_toc_btn = document.getElementById("show-toc-btn");
+                toc_article.setAttribute("style","display:block");
+                show_toc_btn.setAttribute("style","display:none");
+                };
+            function showBtn(){
+                var toc_article = document.getElementById("toc-article");
+                var show_toc_btn = document.getElementById("show-toc-btn");
+                toc_article.setAttribute("style","display:none");
+                show_toc_btn.setAttribute("style","display:block");
+                };
+           </script>
              
         <!-- 目录内容结束 -->
 
