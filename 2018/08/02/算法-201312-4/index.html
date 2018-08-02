@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Mr.Wu的博客</title>
+  <title>有趣的数 201312-4 | Mr.Wu的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: 有趣的数 201312-4date: 2018年8月2日categories: 算法toc: truetags:  算法基础 c语言 动态规划   &amp;nbsp; 有趣的数 &amp;nbsp; 这是一道典型的动态规划的题目，也作为机试算法复习的开始&amp;nbsp; 仔细分析题目，会发现题目的状态分为6种，每种状态都会依赖于其他的状态。 &amp;nbsp; 列表中前一个数字表示前面已出现的数字   2">
+  <meta name="description" content="&amp;nbsp; 有趣的数 &amp;nbsp; 这是一道典型的动态规划的题目，也作为机试算法复习的开始&amp;nbsp; 仔细分析题目，会发现题目的状态分为6种，每种状态都会依赖于其他的状态。 &amp;nbsp; 列表中前一个数字表示前面已出现的数字   2（0，1，3均不能单独在前出现）- 0 1 3 0 2 – 1 3 2 3 – 0 1 0 2 3 – 1 0 1 2 – 3 0 1 2 3 –">
+<meta name="keywords" content="算法基础,c语言,动态规划">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mr.Wu的博客">
+<meta property="og:title" content="有趣的数 201312-4">
 <meta property="og:url" content="http://yoursite.com/2018/08/02/算法-201312-4/index.html">
 <meta property="og:site_name" content="Mr.Wu的博客">
-<meta property="og:description" content="title: 有趣的数 201312-4date: 2018年8月2日categories: 算法toc: truetags:  算法基础 c语言 动态规划   &amp;nbsp; 有趣的数 &amp;nbsp; 这是一道典型的动态规划的题目，也作为机试算法复习的开始&amp;nbsp; 仔细分析题目，会发现题目的状态分为6种，每种状态都会依赖于其他的状态。 &amp;nbsp; 列表中前一个数字表示前面已出现的数字   2">
+<meta property="og:description" content="&amp;nbsp; 有趣的数 &amp;nbsp; 这是一道典型的动态规划的题目，也作为机试算法复习的开始&amp;nbsp; 仔细分析题目，会发现题目的状态分为6种，每种状态都会依赖于其他的状态。 &amp;nbsp; 列表中前一个数字表示前面已出现的数字   2（0，1，3均不能单独在前出现）- 0 1 3 0 2 – 1 3 2 3 – 0 1 0 2 3 – 1 0 1 2 – 3 0 1 2 3 –">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-02T16:17:52.083Z">
+<meta property="og:updated_time" content="2018-08-02T16:19:54.063Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mr.Wu的博客">
-<meta name="twitter:description" content="title: 有趣的数 201312-4date: 2018年8月2日categories: 算法toc: truetags:  算法基础 c语言 动态规划   &amp;nbsp; 有趣的数 &amp;nbsp; 这是一道典型的动态规划的题目，也作为机试算法复习的开始&amp;nbsp; 仔细分析题目，会发现题目的状态分为6种，每种状态都会依赖于其他的状态。 &amp;nbsp; 列表中前一个数字表示前面已出现的数字   2">
+<meta name="twitter:title" content="有趣的数 201312-4">
+<meta name="twitter:description" content="&amp;nbsp; 有趣的数 &amp;nbsp; 这是一道典型的动态规划的题目，也作为机试算法复习的开始&amp;nbsp; 仔细分析题目，会发现题目的状态分为6种，每种状态都会依赖于其他的状态。 &amp;nbsp; 列表中前一个数字表示前面已出现的数字   2（0，1，3均不能单独在前出现）- 0 1 3 0 2 – 1 3 2 3 – 0 1 0 2 3 – 1 0 1 2 – 3 0 1 2 3 –">
   
   
     <link rel="icon" href="/favicon.png">
@@ -145,16 +146,24 @@
             <article id="post-算法-201312-4" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      有趣的数 201312-4
+    </h1>
+  
+
+        
+        <a href="/2018/08/02/算法-201312-4/" class="archive-article-date">
+  	<time datetime="2018-08-02T14:23:28.485Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-02</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p>title: 有趣的数 201312-4<br>date: 2018年8月2日<br>categories: 算法<br>toc: true<br>tags:</p>
-<ul>
-<li>算法基础</li>
-<li>c语言</li>
-<li>动态规划</li>
-</ul>
-<hr>
 <p>&nbsp; <a href="https://blog.csdn.net/nainaiwang/article/details/77511144" target="_blank" rel="noopener">有趣的数</a></p>
 <p>&nbsp; 这是一道典型的动态规划的题目，也作为机试算法复习的开始<br>&nbsp; 仔细分析题目，会发现题目的状态分为6种，每种状态都会依赖于其他的状态。</p>
 <p>&nbsp; 列表中前一个数字表示前面已出现的数字</p>
@@ -168,6 +177,7 @@
 <li>0 1 2 3 – </li>
 </ol>
 </blockquote>
+<a id="more"></a>
 <p>&nbsp; 例如定义一个数组 dp[5][3]这个数组表示填到第5位时，此时满足状态3的数字的个数，这个个数我们可以从第四位的状态推出来。要达到dp[5][3]这样的状态，我们有几种可能：</p>
 <blockquote>
 <ol>
@@ -217,7 +227,37 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">算法基础</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">c语言</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">动态规划</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -303,6 +343,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -320,6 +373,30 @@
 
 
  <!-- 目录内容 -->
+        
+            <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+            <span class="btn-bg"></span>
+            <span class="btn-text">文章导航</span>
+            </p>
+            <div id="toc-article" class="toc-article">
+                <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+                <strong class="toc-title">文章目录</strong>
+                
+           </div>
+           <script type="text/javascript">
+            function showToc(){
+                var toc_article = document.getElementById("toc-article");
+                var show_toc_btn = document.getElementById("show-toc-btn");
+                toc_article.setAttribute("style","display:block");
+                show_toc_btn.setAttribute("style","display:none");
+                };
+            function showBtn(){
+                var toc_article = document.getElementById("toc-article");
+                var show_toc_btn = document.getElementById("show-toc-btn");
+                toc_article.setAttribute("style","display:none");
+                show_toc_btn.setAttribute("style","display:block");
+                };
+           </script>
              
         <!-- 目录内容结束 -->
 
@@ -423,19 +500,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">区块链</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Ubuntu</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">聚类</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">个人博客</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -447,11 +524,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
+                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">个人博客</a>
+                <a href="javascript:void(0)" class="js-tag color4">区块链</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Ubuntu</a>
               </li>
             
             <div class="clearfix"></div>
