@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>算法篇-排序 | Mr.Wu的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="华中科技大学考研复试  &amp;#160; 最近刷题遇见了算法中一个最基本的问题————排序问题，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。 1.排序算法种类&amp;#160; 排序算法按照基本实现方式可以分为以下5种：  1.插入排序直接插入排序折半插入排序希尔插入排序2.交换排序冒泡排序快速排序3.选择排序简单选择排序4.归并排序2路归并排序5.基数排序  2.排序算法原理及实现">
+  <meta name="description" content="华中科技大学考研复试  &amp;#160; 最近刷题遇见了算法中一个最基本的问题–排序问题，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。  1.排序算法种类&amp;#160; 排序算法按照基本实现方式可以分为以下5种：          排序方式      排序算法      时间复杂度      空间复杂度      稳定性            平均      最坏      最好">
 <meta name="keywords" content="算法基础,c语言">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法篇-排序">
 <meta property="og:url" content="http://yoursite.com/2018/08/06/算法-排序/index.html">
 <meta property="og:site_name" content="Mr.Wu的博客">
-<meta property="og:description" content="华中科技大学考研复试  &amp;#160; 最近刷题遇见了算法中一个最基本的问题————排序问题，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。 1.排序算法种类&amp;#160; 排序算法按照基本实现方式可以分为以下5种：  1.插入排序直接插入排序折半插入排序希尔插入排序2.交换排序冒泡排序快速排序3.选择排序简单选择排序4.归并排序2路归并排序5.基数排序  2.排序算法原理及实现">
+<meta property="og:description" content="华中科技大学考研复试  &amp;#160; 最近刷题遇见了算法中一个最基本的问题–排序问题，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。  1.排序算法种类&amp;#160; 排序算法按照基本实现方式可以分为以下5种：          排序方式      排序算法      时间复杂度      空间复杂度      稳定性            平均      最坏      最好">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-06T09:49:41.251Z">
+<meta property="og:updated_time" content="2018-08-06T12:06:35.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法篇-排序">
-<meta name="twitter:description" content="华中科技大学考研复试  &amp;#160; 最近刷题遇见了算法中一个最基本的问题————排序问题，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。 1.排序算法种类&amp;#160; 排序算法按照基本实现方式可以分为以下5种：  1.插入排序直接插入排序折半插入排序希尔插入排序2.交换排序冒泡排序快速排序3.选择排序简单选择排序4.归并排序2路归并排序5.基数排序  2.排序算法原理及实现">
+<meta name="twitter:description" content="华中科技大学考研复试  &amp;#160; 最近刷题遇见了算法中一个最基本的问题–排序问题，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。  1.排序算法种类&amp;#160; 排序算法按照基本实现方式可以分为以下5种：          排序方式      排序算法      时间复杂度      空间复杂度      稳定性            平均      最坏      最好">
   
   
     <link rel="icon" href="/favicon.png">
@@ -165,12 +165,15 @@
       
         <p><a href="https://www.nowcoder.com/kaoyan/retest/11002?page=0" target="_blank" rel="noopener">华中科技大学考研复试</a></p>
 <hr>
-<p>&#160; 最近刷题遇见了算法中一个最基本的问题————排序问题，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。</p>
+<p>&#160; 最近刷题遇见了算法中一个最基本的问题–<strong>排序问题</strong>，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。</p>
+<hr>
 <h2 id="1-排序算法种类"><a href="#1-排序算法种类" class="headerlink" title="1.排序算法种类"></a>1.排序算法种类</h2><p>&#160; 排序算法按照基本实现方式可以分为以下5种：</p>
-<blockquote>
-<p>1.插入排序<br>直接插入排序<br>折半插入排序<br>希尔插入排序<br>2.交换排序<br>冒泡排序<br>快速排序<br>3.选择排序<br>简单选择排序<br>4.归并排序<br>2路归并排序<br>5.基数排序</p>
-</blockquote>
-<h2 id="2-排序算法原理及实现"><a href="#2-排序算法原理及实现" class="headerlink" title="2.排序算法原理及实现"></a>2.排序算法原理及实现</h2>
+<table><br>   <tr><br>      <td rowspan="2">排序方式</td><br>      <td rowspan="2">排序算法</td><br>      <td colspan="3">时间复杂度</td><br>      <td rowspan="2">空间复杂度</td><br>      <td rowspan="2">稳定性</td><br>   </tr><br>   <tr><br>      <td>平均</td><br>      <td>最坏</td><br>      <td>最好</td><br>   </tr><br>   <tr><br>      <td rowspan="3">插入排序</td><br>      <td>直接插入排序</td><br>      <td>O(n2)</td><br>      <td>O(n2)</td><br>      <td>O(n)</td><br>      <td>O(1)</td><br>      <td>稳定</td><br>   </tr><br>   <tr><br>      <td>折半插入排序</td><br>      <td>O(n2)</td><br>      <td>O(n2)</td><br>      <td>O(n)</td><br>      <td>O(1)</td><br>      <td>稳定</td><br>   </tr><br>   <tr><br>      <td>希尔排序</td><br>      <td>O(n1.3)</td><br>      <td>O(n1.3)</td><br>      <td>O(n)</td><br>      <td>O(1)</td><br>      <td>不稳定</td><br>   </tr><br>   <tr><br>      <td rowspan="2">交换排序</td><br>      <td>冒泡排序</td><br>      <td>O(n2)</td><br>      <td>O(n2)</td><br>      <td>O(n)</td><br>      <td>O(1)</td><br>      <td>稳定</td><br>   </tr><br>   <tr><br>      <td>快速排序</td><br>      <td>O(nlog2n)</td><br>      <td>O(n2)</td><br>      <td>O(nlog2n)</td><br>      <td>O(log2n)</td><br>      <td>不稳定</td><br>   </tr><br>   <tr><br>      <td rowspan="2">选择排序</td><br>      <td>简单选择排序</td><br>      <td>O(n2)</td><br>      <td>O(n2)</td><br>      <td>O(n2)</td><br>      <td>O(1)</td><br>      <td>不稳定</td><br>   </tr><br>   <tr><br>      <td>堆排序</td><br>      <td>O(nlog2n)</td><br>      <td>O(nlog2n)</td><br>      <td>O(nlog2n)</td><br>      <td>O(1)</td><br>      <td>不稳定</td><br>   </tr><br>   <tr><br>      <td></td><br>      <td>归并排序</td><br>      <td>O(nlog2n)</td><br>      <td>O(nlog2n)</td><br>      <td>O(nlog2n)</td><br>      <td>O(n)</td><br>      <td>稳定</td><br>   </tr><br>   <tr><br>      <td></td><br>      <td>基数排序</td><br>      <td></td><br>      <td></td><br>      <td></td><br>      <td></td><br>      <td>稳定</td><br>   </tr><br></table>
+
+<p>&#160; 这里需要特殊说明排序算法的稳定性，其定义为：假设有记录A,B，关键字a,b，如果排序前的序列中a=b，且A领先于B，那么在排序之后任然A领先于B，则称排序方法是稳定的；反之，如果排序后可能B领先于A，则排序方法是不稳定的。</p>
+<hr>
+<h2 id="2-排序算法原理及实现"><a href="#2-排序算法原理及实现" class="headerlink" title="2.排序算法原理及实现"></a>2.排序算法原理及实现</h2><p>&#160; 在这一节用c语言实现除基数排序以外的排序算法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;stdio.h&gt;</span></span><br></pre></td></tr></table></figure></p>
+
       
 
       
@@ -478,15 +481,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">算法基础</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">c语言</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
+                <a href="javascript:void(0)" class="js-tag color3">聚类</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -506,11 +505,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+                <a href="javascript:void(0)" class="js-tag color5">算法基础</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">聚类</a>
+                <a href="javascript:void(0)" class="js-tag color4">c语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
               </li>
             
             <div class="clearfix"></div>
