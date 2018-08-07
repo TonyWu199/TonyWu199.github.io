@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>算法篇-排序合集 | Mr.Wu的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="华中科技大学考研复试  &amp;#160; 最近刷题遇见了算法中一个最基本的问题–排序问题，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。  1.排序算法种类&amp;#160; 排序算法按照基本实现方式可以分为以下5种： 排序方式排序算法时间复杂度空间复杂度稳定性平均最坏最好插入排序直接插入排序O(n2)O(n2)O(n)O(1)稳定折半插入排序O(n2)O(n2)O(n)O(1)稳定希">
+  <meta name="description" content="华中科技大学考研复试  &amp;#160; 最近刷题遇见了算法中一个最基本的问题–排序问题，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。  1.排序算法种类&amp;#160; 排序算法按照基本实现方式可以分为以下5种：">
 <meta name="keywords" content="算法基础,c语言">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法篇-排序合集">
 <meta property="og:url" content="http://yoursite.com/2018/08/06/算法-排序/index.html">
 <meta property="og:site_name" content="Mr.Wu的博客">
-<meta property="og:description" content="华中科技大学考研复试  &amp;#160; 最近刷题遇见了算法中一个最基本的问题–排序问题，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。  1.排序算法种类&amp;#160; 排序算法按照基本实现方式可以分为以下5种： 排序方式排序算法时间复杂度空间复杂度稳定性平均最坏最好插入排序直接插入排序O(n2)O(n2)O(n)O(1)稳定折半插入排序O(n2)O(n2)O(n)O(1)稳定希">
+<meta property="og:description" content="华中科技大学考研复试  &amp;#160; 最近刷题遇见了算法中一个最基本的问题–排序问题，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。  1.排序算法种类&amp;#160; 排序算法按照基本实现方式可以分为以下5种：">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-07T16:40:31.023Z">
+<meta property="og:updated_time" content="2018-08-07T16:43:12.612Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法篇-排序合集">
-<meta name="twitter:description" content="华中科技大学考研复试  &amp;#160; 最近刷题遇见了算法中一个最基本的问题–排序问题，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。  1.排序算法种类&amp;#160; 排序算法按照基本实现方式可以分为以下5种： 排序方式排序算法时间复杂度空间复杂度稳定性平均最坏最好插入排序直接插入排序O(n2)O(n2)O(n)O(1)稳定折半插入排序O(n2)O(n2)O(n)O(1)稳定希">
+<meta name="twitter:description" content="华中科技大学考研复试  &amp;#160; 最近刷题遇见了算法中一个最基本的问题–排序问题，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。  1.排序算法种类&amp;#160; 排序算法按照基本实现方式可以分为以下5种：">
   
   
     <link rel="icon" href="/favicon.png">
@@ -168,10 +168,10 @@
 <p>&#160; 最近刷题遇见了算法中一个最基本的问题–<strong>排序问题</strong>，于是决定写这篇博文来总结下各种基本的排序算法，并且给出c语言的实现。</p>
 <hr>
 <h2 id="1-排序算法种类"><a href="#1-排序算法种类" class="headerlink" title="1.排序算法种类"></a>1.排序算法种类</h2><p>&#160; 排序算法按照基本实现方式可以分为以下5种：</p>
+<a id="more"></a>
 <table><tr><td rowspan="2">排序方式</td><td rowspan="2">排序算法</td><td colspan="3">时间复杂度</td><td rowspan="2">空间复杂度</td><td rowspan="2">稳定性</td></tr><tr><td>平均</td><td>最坏</td><td>最好</td></tr><tr><td rowspan="3">插入排序</td><td>直接插入排序</td><td>O(n2)</td><td>O(n2)</td><td>O(n)</td><td>O(1)</td><td>稳定</td></tr><tr><td>折半插入排序</td><td>O(n2)</td><td>O(n2)</td><td>O(n)</td><td>O(1)</td><td>稳定</td></tr><tr><td>希尔排序</td><td>O(n1.3)</td><td>O(n1.3)</td><td>O(n)</td><td>O(1)</td><td>不稳定</td></tr><tr><td rowspan="2">交换排序</td><td>冒泡排序</td><td>O(n2)</td><td>O(n2)</td><td>O(n)</td><td>O(1)</td><td>稳定</td></tr><tr><td>快速排序</td><td>O(nlog2n)</td><td>O(n2)</td><td>O(nlog2n)</td><td>O(log2n)</td><td>不稳定</td></tr><tr><td rowspan="2">选择排序</td><td>简单选择排序</td><td>O(n2)</td><td>O(n2)</td><td>O(n2)</td><td>O(1)</td><td>不稳定</td></tr><tr><td>堆排序</td><td>O(nlog2n)</td><td>O(nlog2n)</td><td>O(nlog2n)</td><td>O(1)</td><td>不稳定</td></tr><tr><td></td><td>归并排序</td><td>O(nlog2n)</td><td>O(nlog2n)</td><td>O(nlog2n)</td><td>O(n)</td><td>稳定</td></tr><tr><td></td><td>基数排序</td><td></td><td></td><td></td><td></td><td>稳定</td></tr></table>
 
 
-<a id="more"></a>
 <p>&#160; 这里需要特殊说明排序算法的稳定性，其定义为：假设有记录A,B，关键字a,b，如果排序前的序列中a=b，且A领先于B，那么在排序之后任然A领先于B，则称排序方法是稳定的；反之，如果排序后可能B领先于A，则排序方法是不稳定的。</p>
 <hr>
 <h2 id="2-排序算法原理及实现"><a href="#2-排序算法原理及实现" class="headerlink" title="2.排序算法原理及实现"></a>2.排序算法原理及实现</h2><p>&#160; 在这一节用c语言实现除基数排序、堆排序以外的排序算法</p>
