@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>算法篇-POJ3984 BFS | Mr.Wu的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="POJ  1.BFS复习&amp;#160; BFS算法主要借助数据结构队列实现，每次从图中读取一个节点之后，将与该节点相邻且可行的节点再次存放在队列中。然后从队列头中再次弹出一个节点，对其相邻的节点继续进行BFS搜索。一直搜索到队列为空或出现目标结果则结束搜索 &amp;#160; BFS算法和DFS算法的主要区别形象上来看BFS是以宽为主，DFS是以深为主。实际上BFS在搜索一个节点的时候将这个一个节点的所有">
+  <meta name="description" content="POJ  1.BFS复习&amp;#160; BFS算法主要借助数据结构队列实现，每次从图中读取一个节点之后，将与该节点相邻且可行的节点再次存放在队列中。然后从队列头中再次弹出一个节点，对其相邻的节点继续进行BFS搜索。一直搜索到队列为空或出现目标结果则结束搜索">
 <meta name="keywords" content="算法基础,c语言,BFS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法篇-POJ3984 BFS">
 <meta property="og:url" content="http://yoursite.com/2018/08/13/算法-POJ3984 BFS/index.html">
 <meta property="og:site_name" content="Mr.Wu的博客">
-<meta property="og:description" content="POJ  1.BFS复习&amp;#160; BFS算法主要借助数据结构队列实现，每次从图中读取一个节点之后，将与该节点相邻且可行的节点再次存放在队列中。然后从队列头中再次弹出一个节点，对其相邻的节点继续进行BFS搜索。一直搜索到队列为空或出现目标结果则结束搜索 &amp;#160; BFS算法和DFS算法的主要区别形象上来看BFS是以宽为主，DFS是以深为主。实际上BFS在搜索一个节点的时候将这个一个节点的所有">
+<meta property="og:description" content="POJ  1.BFS复习&amp;#160; BFS算法主要借助数据结构队列实现，每次从图中读取一个节点之后，将与该节点相邻且可行的节点再次存放在队列中。然后从队列头中再次弹出一个节点，对其相邻的节点继续进行BFS搜索。一直搜索到队列为空或出现目标结果则结束搜索">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-13T13:26:06.118Z">
+<meta property="og:updated_time" content="2018-08-13T13:34:25.196Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法篇-POJ3984 BFS">
-<meta name="twitter:description" content="POJ  1.BFS复习&amp;#160; BFS算法主要借助数据结构队列实现，每次从图中读取一个节点之后，将与该节点相邻且可行的节点再次存放在队列中。然后从队列头中再次弹出一个节点，对其相邻的节点继续进行BFS搜索。一直搜索到队列为空或出现目标结果则结束搜索 &amp;#160; BFS算法和DFS算法的主要区别形象上来看BFS是以宽为主，DFS是以深为主。实际上BFS在搜索一个节点的时候将这个一个节点的所有">
+<meta name="twitter:description" content="POJ  1.BFS复习&amp;#160; BFS算法主要借助数据结构队列实现，每次从图中读取一个节点之后，将与该节点相邻且可行的节点再次存放在队列中。然后从队列头中再次弹出一个节点，对其相邻的节点继续进行BFS搜索。一直搜索到队列为空或出现目标结果则结束搜索">
   
   
     <link rel="icon" href="/favicon.png">
@@ -166,6 +166,7 @@
         <p><a href="poj.org/">POJ</a></p>
 <hr>
 <h2 id="1-BFS复习"><a href="#1-BFS复习" class="headerlink" title="1.BFS复习"></a>1.BFS复习</h2><p>&#160; BFS算法主要借助数据结构<strong>队列</strong>实现，每次从图中读取一个节点之后，将与该节点相邻且可行的节点再次存放在队列中。然后从队列头中再次弹出一个节点，对其相邻的节点继续进行BFS搜索。一直搜索到队列为空或出现目标结果则结束搜索</p>
+<a id="more"></a>
 <p>&#160; BFS算法和DFS算法的主要区别形象上来看BFS是以宽为主，DFS是以深为主。实际上BFS在搜索一个节点的时候将这个一个节点的所有相邻节点都放入<strong>队列</strong>中，再从队列中读取节点；而DFS则是先将该节点的一个相邻节点放入<strong>栈</strong>中，再从栈中读取节点。因为<strong>队列</strong>和<strong>栈</strong>这两种不同的数据结构以及两种算法存放节点的节奏不同，导致了算法的差异。</p>
 <hr>
 <h2 id="2-BFS习题-POJ-3984"><a href="#2-BFS习题-POJ-3984" class="headerlink" title="2.BFS习题 POJ 3984"></a>2.BFS习题 POJ 3984</h2><p>&#160; 这是一道比较典型的BFS题目，给出一个5×5的迷宫矩阵，需要求出从迷宫(0,0)-&gt;(4,4)的路径。这里只要使用了BFS算法，整体的思路比较清晰。在实现BFS的同时，还实现了一个具有简单功能的队列。</p>
@@ -486,6 +487,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">个人博客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">算法基础</a>
               </li>
              
@@ -495,14 +504,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">个人博客</a>
               </li>
              
               <li class="article-tag-list-item">
