@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>环境配置篇-Ubuntu16.04下配置Docker和Go语言 | Mr.Wu的博客</title>
+  <title>算法篇-POJ3984 BFS | Mr.Wu的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装 用apt-get install和手动安装都可">
-<meta name="keywords" content="区块链,Ubuntu">
+  <meta name="description" content="POJ  1.BFS复习&amp;#160; BFS算法主要借助数据结构队列实现，每次从图中读取一个节点之后，将与该节点相邻且可行的节点再次存放在队列中。然后从队列头中再次弹出一个节点，对其相邻的节点继续进行BFS搜索。一直搜索到队列为空或出现目标结果则结束搜索 &amp;#160; BFS算法和DFS算法的主要区别形象上来看BFS是以宽为主，DFS是以深为主。实际上BFS在搜索一个节点的时候将这个一个节点的所有">
+<meta name="keywords" content="算法基础,c语言,BFS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="环境配置篇-Ubuntu16.04下配置Docker和Go语言">
-<meta property="og:url" content="http://yoursite.com/2018/06/08/环境配置篇-Ubuntu16.04下配置Docker和Go语言/index.html">
+<meta property="og:title" content="算法篇-POJ3984 BFS">
+<meta property="og:url" content="http://yoursite.com/2018/08/13/算法-POJ3984 BFS/index.html">
 <meta property="og:site_name" content="Mr.Wu的博客">
-<meta property="og:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装 用apt-get install和手动安装都可">
+<meta property="og:description" content="POJ  1.BFS复习&amp;#160; BFS算法主要借助数据结构队列实现，每次从图中读取一个节点之后，将与该节点相邻且可行的节点再次存放在队列中。然后从队列头中再次弹出一个节点，对其相邻的节点继续进行BFS搜索。一直搜索到队列为空或出现目标结果则结束搜索 &amp;#160; BFS算法和DFS算法的主要区别形象上来看BFS是以宽为主，DFS是以深为主。实际上BFS在搜索一个节点的时候将这个一个节点的所有">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-08T10:45:18.142Z">
+<meta property="og:updated_time" content="2018-08-13T13:16:09.665Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="环境配置篇-Ubuntu16.04下配置Docker和Go语言">
-<meta name="twitter:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装 用apt-get install和手动安装都可">
+<meta name="twitter:title" content="算法篇-POJ3984 BFS">
+<meta name="twitter:description" content="POJ  1.BFS复习&amp;#160; BFS算法主要借助数据结构队列实现，每次从图中读取一个节点之后，将与该节点相邻且可行的节点再次存放在队列中。然后从队列头中再次弹出一个节点，对其相邻的节点继续进行BFS搜索。一直搜索到队列为空或出现目标结果则结束搜索 &amp;#160; BFS算法和DFS算法的主要区别形象上来看BFS是以宽为主，DFS是以深为主。实际上BFS在搜索一个节点的时候将这个一个节点的所有">
   
   
     <link rel="icon" href="/favicon.png">
@@ -143,74 +143,40 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-环境配置篇-Ubuntu16.04下配置Docker和Go语言" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-算法-POJ3984 BFS" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      环境配置篇-Ubuntu16.04下配置Docker和Go语言
+      算法篇-POJ3984 BFS
     </h1>
   
 
         
-        <a href="/2018/06/08/环境配置篇-Ubuntu16.04下配置Docker和Go语言/" class="archive-article-date">
-  	<time datetime="2018-06-07T17:51:35.191Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-08</time>
+        <a href="/2018/08/13/算法-POJ3984 BFS/" class="archive-article-date">
+  	<time datetime="2018-08-13T12:55:38.101Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-13</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>安装环境：Ubuntu 16.04<br>GO语言版本：1.9</p>
+        <p><a href="poj.org/">POJ</a></p>
 <hr>
-<h2 id="1-安装curl"><a href="#1-安装curl" class="headerlink" title="1. 安装curl"></a>1. 安装curl</h2><p>1.以下两个指令用于安装openssl</p>
-<pre><code>$sudo1 apt-get install openssl
-$sudo apt-get isntall libssl-dev
-</code></pre><p>2.下载curl包并安装</p>
-<pre><code>用apt-get install和手动安装都可
-</code></pre><a id="more"></a>
+<h2 id="1-BFS复习"><a href="#1-BFS复习" class="headerlink" title="1.BFS复习"></a>1.BFS复习</h2><p>&#160; BFS算法主要借助数据结构<strong>队列</strong>实现，每次从图中读取一个节点之后，将与该节点相邻且可行的节点再次存放在队列中。然后从队列头中再次弹出一个节点，对其相邻的节点继续进行BFS搜索。一直搜索到队列为空或出现目标结果则结束搜索</p>
+<p>&#160; BFS算法和DFS算法的主要区别形象上来看BFS是以宽为主，DFS是以深为主。实际上BFS在搜索一个节点的时候将这个一个节点的所有相邻节点都放入<strong>队列</strong>中，再从队列中读取节点；而DFS则是先将该节点的一个相邻节点放入<strong>栈</strong>中，再从栈中读取节点。因为<strong>队列</strong>和<strong>栈</strong>这两种不同的数据结构以及两种算法存放节点的节奏不同，导致了算法的差异。</p>
 <hr>
-<h2 id="2-安装docker和docker-compose"><a href="#2-安装docker和docker-compose" class="headerlink" title="2. 安装docker和docker-compose"></a>2. 安装docker和docker-compose</h2><p>1.下载文件的url</p>
-<pre><code>https://download.docker.com/linux/ubuntu/dists/
-</code></pre><p>2.解压验证docker是否安装成功</p>
-<pre><code>$sudo dpkg -i /DebFile
-$sudo docker run hello-world
-</code></pre><p>3.安装docker-compose</p>
-<pre><code>$sudo curl -L https://github.com/docker/compose/releases/download/1.21.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
-$sudo chmod +x /usr/local/bin/docker-compose
-</code></pre><hr>
-<h2 id="3-安装go语言"><a href="#3-安装go语言" class="headerlink" title="3. 安装go语言"></a>3. 安装go语言</h2><p>1.命令行一口气安装go语言</p>
-<pre><code>$curl -O https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz  
-$tar -C /usr/local -zxvf go1.9.linux-amd64.tar.gz  
-$mkdir -p ~/go/src  
-$echo &quot;export GOPATH=\$HOME/go&quot; &gt;&gt; ~/.bashrc  
-$echo &quot;export PATH=\$PATH:\$GOPATH/bin:/usr/local/go/bin&quot; &gt;&gt; ~/.bashrc  
-$source ~/.bashrc  
-$go version
-</code></pre><p>　这里需要注意的是go的环境变量配置在当前用户的环境变量文件<code>~/.bashrc</code>中，一下两条指令需要在sudo的权限下运行，这时只需要在命令行先敲入<code>sudo -s</code>即可，不必单独配置系统环境变量。</p>
-<p>2.为编写chaincode安装必要环境</p>
-<pre><code># go get -u --tags nopkcs11 github.com/hyperledger/fabric/core/chaincode/shim
-第一句如果报错： 
-_go: missing Git command. See https://golang.org/s/gogetcmd
-package github.com/hyperledger/fabric/core/chaincode/shim: exec: &quot;git&quot;: executable file not found in $PATH_
-则使用`apt install git`安装`git`；
-如果继续报错：
-_# cd .; 
-error: RPC failed; curl 56 GnuTLS recv error (-54): Error in the pull function.
-fatal: The remote end hung up unexpectedly
-fatal: early EOF
-fatal: index-pack failed
-package github.com/hyperledger/fabric/core/chaincode/shim: exit status 128_
-输入指令`git config --global http.postBuffer 524288000`
-
-go build --tags nopkcs11
-sudo apt install libtool libltdl-dev
-</code></pre><hr>
-<h2 id="4-下载docker镜像和fabric的可执行文件"><a href="#4-下载docker镜像和fabric的可执行文件" class="headerlink" title="4. 下载docker镜像和fabric的可执行文件"></a>4. 下载docker镜像和fabric的可执行文件</h2><p><em>文件s.sh</em></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># Copyright IBM Corp. All Rights Reserved.</span></span><br><span class="line"><span class="comment"># SPDX-License-Identifier: Apache-2.0</span></span><br><span class="line"><span class="comment"># current version of fabric released</span></span><br><span class="line"><span class="built_in">export</span> VERSION=<span class="variable">$&#123;1:-1.0.6&#125;</span></span><br><span class="line"><span class="comment"># current version of fabric-ca released</span></span><br><span class="line"><span class="built_in">export</span> CA_VERSION=<span class="variable">$&#123;2:-$VERSION&#125;</span></span><br><span class="line"><span class="built_in">export</span> ARCH=$(<span class="built_in">echo</span> <span class="string">"<span class="variable">$(uname -s|tr '[:upper:]' '[:lower:]'|sed 's/mingw64_nt.*/windows/')</span>-<span class="variable">$(uname -m | sed 's/x86_64/amd64/g')</span>"</span> | awk <span class="string">'&#123;print tolower($0)&#125;'</span>)</span><br><span class="line"><span class="comment">#Set MARCH variable i.e ppc64le,s390x,x86_64,i386</span></span><br><span class="line">MARCH=`uname -m`</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">dockerFabricPull</span></span>() &#123;</span><br><span class="line">  <span class="built_in">local</span> FABRIC_TAG=<span class="variable">$1</span></span><br><span class="line">  <span class="keyword">for</span> IMAGES <span class="keyword">in</span> peer orderer couchdb ccenv javaenv kafka zookeeper tools; <span class="keyword">do</span></span><br><span class="line">      <span class="built_in">echo</span> <span class="string">"==&gt; FABRIC IMAGE: <span class="variable">$IMAGES</span>"</span></span><br><span class="line">      <span class="built_in">echo</span></span><br><span class="line">      docker pull hyperledger/fabric-<span class="variable">$IMAGES</span>:<span class="variable">$FABRIC_TAG</span></span><br><span class="line">      docker tag hyperledger/fabric-<span class="variable">$IMAGES</span>:<span class="variable">$FABRIC_TAG</span> hyperledger/fabric-<span class="variable">$IMAGES</span></span><br><span class="line">  <span class="keyword">done</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">dockerCaPull</span></span>() &#123;</span><br><span class="line">      <span class="built_in">local</span> CA_TAG=<span class="variable">$1</span></span><br><span class="line">      <span class="built_in">echo</span> <span class="string">"==&gt; FABRIC CA IMAGE"</span></span><br><span class="line">      <span class="built_in">echo</span></span><br><span class="line">      docker pull hyperledger/fabric-ca:<span class="variable">$CA_TAG</span></span><br><span class="line">      docker tag hyperledger/fabric-ca:<span class="variable">$CA_TAG</span> hyperledger/fabric-ca</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">: <span class="variable">$&#123;CA_TAG:="$MARCH-$CA_VERSION"&#125;</span></span><br><span class="line">: <span class="variable">$&#123;FABRIC_TAG:="$MARCH-$VERSION"&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"===&gt; Downloading platform binaries"</span></span><br><span class="line">curl https://nexus.hyperledger.org/content/repositories/releases/org/hyperledger/fabric/hyperledger-fabric/<span class="variable">$&#123;ARCH&#125;</span>-<span class="variable">$&#123;VERSION&#125;</span>/hyperledger-fabric-<span class="variable">$&#123;ARCH&#125;</span>-<span class="variable">$&#123;VERSION&#125;</span>.tar.gz | tar xz</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"===&gt; Pulling fabric Images"</span></span><br><span class="line">dockerFabricPull <span class="variable">$&#123;FABRIC_TAG&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"===&gt; Pulling fabric ca Image"</span></span><br><span class="line">dockerCaPull <span class="variable">$&#123;CA_TAG&#125;</span></span><br><span class="line"><span class="built_in">echo</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"===&gt; List out hyperledger docker images"</span></span><br><span class="line">docker images | grep hyperledger*</span><br></pre></td></tr></table></figure>
-
+<h2 id="2-BFS习题-POJ-3984"><a href="#2-BFS习题-POJ-3984" class="headerlink" title="2.BFS习题 POJ 3984"></a>2.BFS习题 POJ 3984</h2><p>&#160; 这是一道比较典型的BFS题目，给出一个5×5的迷宫矩阵，需要求出从迷宫(0,0)-&gt;(4,4)的路径。这里只要使用了BFS算法，整体的思路比较清晰。</p>
+<p>&#160; 这道题有3个tips需要注意：</p>
+<blockquote>
+<p>1.可以建立一个4×2的数组，分别代表一个点四个相邻的方向。<br>2.最短路径的输出需要通过定义数据结构中的pre在队列中寻找<br>3.在有了每一个点的pre之后，最简单的是通过递归的方式来顺序输出路径。</p>
+</blockquote>
+<pre><code>1.将(0,0)元素入队;
+2.从队列中取出队列头(0,0)，然后遍历搜索(-1,0),(0,1),(1,0),(0,-1)，首先判断这几个点是否含有终点，如果有则结束搜索；如果没有，则判断这几个点是否满足在图中并且是通路的要求，如果满足则将其全部添加到队列中;
+3.如果队列为空则继续搜索;
+</code></pre><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span></span><br><span class="line">	<span class="keyword">int</span> x;</span><br><span class="line">	<span class="keyword">int</span> y;</span><br><span class="line">	<span class="keyword">int</span> value;</span><br><span class="line">	<span class="keyword">int</span> flag;    <span class="comment">//0为未检测，1为检测过 </span></span><br><span class="line">	<span class="keyword">int</span> pre;</span><br><span class="line">&#125;node;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">queue</span>&#123;</span></span><br><span class="line">	node M[<span class="number">25</span>];</span><br><span class="line">	<span class="keyword">int</span> front;</span><br><span class="line">	<span class="keyword">int</span> rear;</span><br><span class="line">&#125;<span class="built_in">queue</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="built_in">queue</span>* q, node n)</span></span>;</span><br><span class="line"><span class="function">node <span class="title">out</span><span class="params">(<span class="built_in">queue</span>* q)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">isempty</span><span class="params">(<span class="built_in">queue</span> q)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">isvalid</span><span class="params">(node n)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">pre_print</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(node n)</span></span>; </span><br><span class="line"></span><br><span class="line">node matrix[<span class="number">5</span>][<span class="number">5</span>];</span><br><span class="line"><span class="built_in">queue</span> Q;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	node final_node;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">5</span>; i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;<span class="number">5</span>; j++)&#123;</span><br><span class="line">			<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;matrix[i][j].value);</span><br><span class="line">			matrix[i][j].x = i;</span><br><span class="line">			matrix[i][j].y = j;</span><br><span class="line">			matrix[i][j].flag = <span class="number">0</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	matrix[<span class="number">0</span>][<span class="number">0</span>].flag = <span class="number">1</span>; </span><br><span class="line">	matrix[<span class="number">0</span>][<span class="number">0</span>].pre = <span class="number">-1</span>;</span><br><span class="line">	insert(&amp;Q, matrix[<span class="number">0</span>][<span class="number">0</span>]);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//用数组定义方向，值得学习！ </span></span><br><span class="line">	<span class="keyword">int</span> dir[<span class="number">4</span>][<span class="number">2</span>] = &#123;</span><br><span class="line">		&#123;<span class="number">0</span>, <span class="number">1</span>&#125;, &#123;<span class="number">1</span>, <span class="number">0</span>&#125;,</span><br><span class="line">		&#123;<span class="number">0</span>, <span class="number">-1</span>&#125;, &#123;<span class="number">-1</span>, <span class="number">0</span>&#125;</span><br><span class="line">	&#125;;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span>(!isempty(Q))&#123;</span><br><span class="line">		node head = out(&amp;Q);</span><br><span class="line">		<span class="comment">//printf("%d", Q.front);</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">//printf("current point (%d,%d)\n", head.x, head.y);</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">//对四周的点进行尝试 </span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">4</span>; i++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(head.x + dir[i][<span class="number">0</span>] &lt; <span class="number">0</span> || head.x + dir[i][<span class="number">0</span>] &gt; <span class="number">4</span> || head.y + dir[i][<span class="number">1</span>] &lt; <span class="number">0</span> || head.y + dir[i][<span class="number">1</span>] &gt; <span class="number">4</span>)</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			</span><br><span class="line">			node after_move = matrix[head.x + dir[i][<span class="number">0</span>]][head.y + dir[i][<span class="number">1</span>]];</span><br><span class="line">			</span><br><span class="line">			<span class="keyword">if</span>(after_move.x == matrix[<span class="number">4</span>][<span class="number">4</span>].x &amp;&amp; after_move.y == matrix[<span class="number">4</span>][<span class="number">4</span>].y)&#123;</span><br><span class="line">				<span class="comment">//printf("到达终点\n"); </span></span><br><span class="line">				matrix[after_move.x][after_move.y].pre = Q.front<span class="number">-1</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">			<span class="keyword">if</span>(after_move.flag == <span class="number">0</span> &amp;&amp; after_move.value == <span class="number">0</span>)&#123;  <span class="comment">//位置是通路且未被访问 </span></span><br><span class="line">				<span class="comment">//printf("放入队列中(%d,%d)\n", after_move.x, after_move.y);</span></span><br><span class="line">				matrix[after_move.x][after_move.y].pre = Q.front<span class="number">-1</span>;</span><br><span class="line">				matrix[after_move.x][after_move.y].flag = <span class="number">1</span>; </span><br><span class="line">				insert(&amp;Q, matrix[after_move.x][after_move.y]);</span><br><span class="line">			&#125;</span><br><span class="line">			</span><br><span class="line">		&#125; </span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	pre_print(<span class="number">4</span>, <span class="number">4</span>);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">25</span>; i++)&#123;</span><br><span class="line">		<span class="keyword">if</span>(Q.M[i].flag == <span class="number">2</span>)&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"(%d, %d)\n"</span>, Q.M[i].x, Q.M[i].y);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"(4, 4)\n"</span>);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//利用递归输出 </span></span><br><span class="line">	<span class="comment">//print(matrix[4][4]);</span></span><br><span class="line"></span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">//输出1：标记输出 </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">pre_print</span><span class="params">(<span class="keyword">int</span> x, <span class="keyword">int</span> y)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(x == <span class="number">0</span> &amp;&amp; y == <span class="number">0</span>)&#123;</span><br><span class="line">		Q.M[<span class="number">0</span>].flag = <span class="number">2</span>;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		Q.M[matrix[x][y].pre].flag = <span class="number">2</span>;</span><br><span class="line">		pre_print(Q.M[matrix[x][y].pre].x, Q.M[matrix[x][y].pre].y);</span><br><span class="line">	&#125;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">//输出2：递归输出</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(node n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(n.pre == <span class="number">-1</span>)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"(0, 0)\n"</span>);</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		print(Q.M[n.pre]);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"(%d, %d)\n"</span>, n.x, n.y);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">//向队列中插入元素 </span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="built_in">queue</span>* q, node n)</span></span>&#123;</span><br><span class="line">	q-&gt;M[q-&gt;rear] = n;</span><br><span class="line">	q-&gt;rear++; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//返回队列头元素 </span></span><br><span class="line"><span class="function">node <span class="title">out</span><span class="params">(<span class="built_in">queue</span>* q)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> q-&gt;M[q-&gt;front++];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//判断队列是否为空 </span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">isempty</span><span class="params">(<span class="built_in">queue</span> q)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> q.rear == q.front;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">isvalid</span><span class="params">(node n)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(n.x &gt;=<span class="number">0</span> &amp;&amp; n.x &lt;=<span class="number">4</span> &amp;&amp; n.y &gt;=<span class="number">0</span> &amp;&amp; n.y &lt;=<span class="number">4</span>)</span><br><span class="line">		<span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -254,11 +220,15 @@ sudo apt install libtool libltdl-dev
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">区块链</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">算法基础</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Ubuntu</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">c语言</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">BFS</a>
         		</li>
       		
 		</ul>
@@ -270,7 +240,7 @@ sudo apt install libtool libltdl-dev
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/环境配置//" class="article-tag-list-link color5">环境配置</a>
+        			<a href="/categories/算法//" class="article-tag-list-link color3">算法</a>
         		</li>
       		
 		</ul>
@@ -325,7 +295,7 @@ sudo apt install libtool libltdl-dev
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/06/08/环境配置篇-Ubuntu16.04下配置Docker和Go语言/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/13/算法-POJ3984 BFS/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -339,18 +309,9 @@ sudo apt install libtool libltdl-dev
   
 <nav id="article-nav">
   
-    <a href="/2018/07/25/算法-a+b之大数加法/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          算法篇-a+b大数加法
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/05/14/引言/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">如何搭建我的github+hexo博客</div>
+    <a href="/2018/08/09/算法-二叉树遍历(前序+中序=后序)/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">算法篇-二叉树遍历(前序+中序=后序)</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -377,7 +338,7 @@ sudo apt install libtool libltdl-dev
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装curl"><span class="toc-number">1.</span> <span class="toc-text">1. 安装curl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-安装docker和docker-compose"><span class="toc-number">2.</span> <span class="toc-text">2. 安装docker和docker-compose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-安装go语言"><span class="toc-number">3.</span> <span class="toc-text">3. 安装go语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-下载docker镜像和fabric的可执行文件"><span class="toc-number">4.</span> <span class="toc-text">4. 下载docker镜像和fabric的可执行文件</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-BFS复习"><span class="toc-number">1.</span> <span class="toc-text">1.BFS复习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-BFS习题-POJ-3984"><span class="toc-number">2.</span> <span class="toc-text">2.BFS习题 POJ 3984</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -408,7 +369,7 @@ sudo apt install libtool libltdl-dev
             <div id="toc-article" class="toc-article">
                 <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
                 <strong class="toc-title">文章目录</strong>
-                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装curl"><span class="toc-number">1.</span> <span class="toc-text">1. 安装curl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-安装docker和docker-compose"><span class="toc-number">2.</span> <span class="toc-text">2. 安装docker和docker-compose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-安装go语言"><span class="toc-number">3.</span> <span class="toc-text">3. 安装go语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-下载docker镜像和fabric的可执行文件"><span class="toc-number">4.</span> <span class="toc-text">4. 下载docker镜像和fabric的可执行文件</span></a></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-BFS复习"><span class="toc-number">1.</span> <span class="toc-text">1.BFS复习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-BFS习题-POJ-3984"><span class="toc-number">2.</span> <span class="toc-text">2.BFS习题 POJ 3984</span></a></li></ol>
            </div>
            <script type="text/javascript">
             function showToc(){
