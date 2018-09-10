@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>算法篇-POJ1321 DFS | Mr.Wu的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="POJ  1.DFS复习&amp;#160; 在上一篇BFS的文章中DFS方法已经给出了一定的介绍。但是这里的实现并没有使用到堆栈数据结构，这是因为使用递归能够完全模拟DFS的过程，而单独使用一个堆栈，则更有利于记录每一个节点的遍历情况，在有些特定的题目中需要用到堆栈结构。  2.DFS习题 POJ 1321&amp;#160; 这道题目是一道有关填子的问题，乍一看和八皇后问题很相似。然后这道题并不能完全按照八皇">
+  <meta name="description" content="POJ  1.DFS复习&amp;#160; 在上一篇BFS的文章中DFS方法已经给出了一定的介绍。但是这里的实现并没有使用到堆栈数据结构，这是因为使用递归能够完全模拟DFS的过程，而单独使用一个堆栈，则更有利于记录每一个节点的遍历情况，在有些特定的题目中需要用到堆栈结构。">
 <meta name="keywords" content="算法基础,c语言,DFS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="算法篇-POJ1321 DFS">
 <meta property="og:url" content="http://yoursite.com/2018/08/15/算法-POJ1321 DFS/index.html">
 <meta property="og:site_name" content="Mr.Wu的博客">
-<meta property="og:description" content="POJ  1.DFS复习&amp;#160; 在上一篇BFS的文章中DFS方法已经给出了一定的介绍。但是这里的实现并没有使用到堆栈数据结构，这是因为使用递归能够完全模拟DFS的过程，而单独使用一个堆栈，则更有利于记录每一个节点的遍历情况，在有些特定的题目中需要用到堆栈结构。  2.DFS习题 POJ 1321&amp;#160; 这道题目是一道有关填子的问题，乍一看和八皇后问题很相似。然后这道题并不能完全按照八皇">
+<meta property="og:description" content="POJ  1.DFS复习&amp;#160; 在上一篇BFS的文章中DFS方法已经给出了一定的介绍。但是这里的实现并没有使用到堆栈数据结构，这是因为使用递归能够完全模拟DFS的过程，而单独使用一个堆栈，则更有利于记录每一个节点的遍历情况，在有些特定的题目中需要用到堆栈结构。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-15T09:33:02.268Z">
+<meta property="og:updated_time" content="2018-09-10T08:11:33.604Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法篇-POJ1321 DFS">
-<meta name="twitter:description" content="POJ  1.DFS复习&amp;#160; 在上一篇BFS的文章中DFS方法已经给出了一定的介绍。但是这里的实现并没有使用到堆栈数据结构，这是因为使用递归能够完全模拟DFS的过程，而单独使用一个堆栈，则更有利于记录每一个节点的遍历情况，在有些特定的题目中需要用到堆栈结构。  2.DFS习题 POJ 1321&amp;#160; 这道题目是一道有关填子的问题，乍一看和八皇后问题很相似。然后这道题并不能完全按照八皇">
+<meta name="twitter:description" content="POJ  1.DFS复习&amp;#160; 在上一篇BFS的文章中DFS方法已经给出了一定的介绍。但是这里的实现并没有使用到堆栈数据结构，这是因为使用递归能够完全模拟DFS的过程，而单独使用一个堆栈，则更有利于记录每一个节点的遍历情况，在有些特定的题目中需要用到堆栈结构。">
   
   
     <link rel="icon" href="/favicon.png">
@@ -166,6 +166,7 @@
         <p><a href="poj.org/">POJ</a></p>
 <hr>
 <h2 id="1-DFS复习"><a href="#1-DFS复习" class="headerlink" title="1.DFS复习"></a>1.DFS复习</h2><p>&#160; 在上一篇BFS的文章中DFS方法已经给出了一定的介绍。但是这里的实现并没有使用到<strong>堆栈</strong>数据结构，这是因为使用递归能够完全模拟DFS的过程，而单独使用一个堆栈，则更有利于记录每一个节点的遍历情况，在有些特定的题目中需要用到<strong>堆栈</strong>结构。</p>
+<a id="more"></a>
 <hr>
 <h2 id="2-DFS习题-POJ-1321"><a href="#2-DFS习题-POJ-1321" class="headerlink" title="2.DFS习题 POJ 1321"></a>2.DFS习题 POJ 1321</h2><p>&#160; 这道题目是一道有关填子的问题，乍一看和八皇后问题很相似。然后这道题并不能完全按照八皇后问题的解法求解，因为八皇后问题是8×8的方格中填子，这样的话默认是每一行必有一个子。然后这道题棋盘的维度是可能大于棋子的，这就造成了有些行可能并没有棋子的情况。当然，这道题可以用于求解八皇后问题。</p>
 <p>&#160; 因此需要一个额外增加一个遍历来尝试多种情况：</p>
@@ -497,14 +498,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">聚类</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
@@ -521,14 +514,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">BFS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">DFS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
               </li>
              
@@ -538,6 +523,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Ubuntu</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">聚类</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">BFS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">DFS</a>
               </li>
              
               <li class="article-tag-list-item">
