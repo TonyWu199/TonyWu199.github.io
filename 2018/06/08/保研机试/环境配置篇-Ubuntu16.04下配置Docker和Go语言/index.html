@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>CCF篇-201312-4 有趣的数 | Mr.Wu的博客</title>
+  <title>环境配置篇-Ubuntu16.04下配置Docker和Go语言 | Mr.Wu的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;nbsp; 有趣的数 &amp;nbsp; 这是一道典型的动态规划的题目，也作为机试算法复习的开始&amp;nbsp; 仔细分析题目，会发现题目的状态分为6种，每种状态都会依赖于其他的状态。 &amp;nbsp; 下面列表是对这6种状态的划分，列表中前一个数字表示前面已出现的数字，后面为剩余数字。注意后面的剩余数字和还能够填写的数字是不同的，比如情况1，还剩余1,3需要填写，但是还能够填写0,1,2,3。   2（0">
-<meta name="keywords" content="算法基础,c语言,动态规划">
+  <meta name="description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装 用apt-get install和手动安装都可">
+<meta name="keywords" content="区块链,Ubuntu">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CCF篇-201312-4 有趣的数">
-<meta property="og:url" content="http://yoursite.com/2018/08/02/CCF-201312-4/index.html">
+<meta property="og:title" content="环境配置篇-Ubuntu16.04下配置Docker和Go语言">
+<meta property="og:url" content="http://yoursite.com/2018/06/08/保研机试/环境配置篇-Ubuntu16.04下配置Docker和Go语言/index.html">
 <meta property="og:site_name" content="Mr.Wu的博客">
-<meta property="og:description" content="&amp;nbsp; 有趣的数 &amp;nbsp; 这是一道典型的动态规划的题目，也作为机试算法复习的开始&amp;nbsp; 仔细分析题目，会发现题目的状态分为6种，每种状态都会依赖于其他的状态。 &amp;nbsp; 下面列表是对这6种状态的划分，列表中前一个数字表示前面已出现的数字，后面为剩余数字。注意后面的剩余数字和还能够填写的数字是不同的，比如情况1，还剩余1,3需要填写，但是还能够填写0,1,2,3。   2（0">
+<meta property="og:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装 用apt-get install和手动安装都可">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-08-07T15:55:50.054Z">
+<meta property="og:updated_time" content="2018-06-08T10:45:18.142Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CCF篇-201312-4 有趣的数">
-<meta name="twitter:description" content="&amp;nbsp; 有趣的数 &amp;nbsp; 这是一道典型的动态规划的题目，也作为机试算法复习的开始&amp;nbsp; 仔细分析题目，会发现题目的状态分为6种，每种状态都会依赖于其他的状态。 &amp;nbsp; 下面列表是对这6种状态的划分，列表中前一个数字表示前面已出现的数字，后面为剩余数字。注意后面的剩余数字和还能够填写的数字是不同的，比如情况1，还剩余1,3需要填写，但是还能够填写0,1,2,3。   2（0">
+<meta name="twitter:title" content="环境配置篇-Ubuntu16.04下配置Docker和Go语言">
+<meta name="twitter:description" content="安装环境：Ubuntu 16.04GO语言版本：1.9  1. 安装curl1.以下两个指令用于安装openssl $sudo1 apt-get install openssl $sudo apt-get isntall libssl-dev 2.下载curl包并安装 用apt-get install和手动安装都可">
   
   
     <link rel="icon" href="/favicon.png">
@@ -143,53 +143,73 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-CCF-201312-4" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-保研机试/环境配置篇-Ubuntu16.04下配置Docker和Go语言" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      CCF篇-201312-4 有趣的数
+      环境配置篇-Ubuntu16.04下配置Docker和Go语言
     </h1>
   
 
         
-        <a href="/2018/08/02/CCF-201312-4/" class="archive-article-date">
-  	<time datetime="2018-08-02T14:23:28.485Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-02</time>
+        <a href="/2018/06/08/保研机试/环境配置篇-Ubuntu16.04下配置Docker和Go语言/" class="archive-article-date">
+  	<time datetime="2018-06-07T17:51:35.191Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<p>&nbsp; <a href="https://blog.csdn.net/nainaiwang/article/details/77511144" target="_blank" rel="noopener">有趣的数</a></p>
-<p>&nbsp; 这是一道典型的动态规划的题目，也作为机试算法复习的开始<br>&nbsp; 仔细分析题目，会发现题目的状态分为6种，每种状态都会依赖于其他的状态。</p>
-<p>&nbsp; 下面列表是对这6种状态的划分，列表中前一个数字表示前面已出现的数字，后面为剩余数字。注意后面的剩余数字和还能够填写的数字是不同的，比如情况1，还剩余1,3需要填写，但是还能够填写0,1,2,3。</p>
-<blockquote>
-<ol start="0">
-<li>2（0，1，3均不能单独在前出现）- 0 1 3</li>
-<li>0 2 – 1 3   </li>
-<li>2 3 – 0 1</li>
-<li>0 2 3 – 1</li>
-<li>0 1 2 – 3</li>
-<li>0 1 2 3 – </li>
-</ol>
-</blockquote>
-<a id="more"></a>
-<p>&nbsp; 例如定义一个数组 dp[5][3]这个数组表示填到第5位时，此时满足状态3的数字的个数，这个个数我们可以从第四位的状态推出来。要达到dp[5][3]这样的状态，我们有几种可能：</p>
-<blockquote>
-<ol>
-<li>在dp[4][1]的基础上填写3</li>
-<li>在dp[4][2]的基础上填写0</li>
-<li>在dp[4][3]的基础上填写0或3</li>
-</ol>
-</blockquote>
-<p>&nbsp; 则可以得出下列式子<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dp[5][3] = (dp[4][1] + dp[4][2] + dp[4][3]*2) mod 1000000007</span><br></pre></td></tr></table></figure></p>
-<p>&nbsp; 最终可以写出如下代码<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">dp[i+<span class="number">1</span>][<span class="number">0</span>] = <span class="number">1</span>  <span class="comment">//要想保持只能一直填2</span></span><br><span class="line">dp[i+<span class="number">1</span>][<span class="number">1</span>] = dp[i][<span class="number">0</span>] + dp[i][<span class="number">1</span>]*<span class="number">2</span></span><br><span class="line">dp[i+<span class="number">1</span>][<span class="number">2</span>] = dp[i][<span class="number">0</span>] + dp[i][<span class="number">2</span>]</span><br><span class="line">dp[i+<span class="number">1</span>][<span class="number">3</span>] = dp[i][<span class="number">1</span>] + dp[i][<span class="number">2</span>] + dp[<span class="number">4</span>][<span class="number">3</span>]*<span class="number">2</span></span><br><span class="line">dp[i+<span class="number">1</span>][<span class="number">4</span>] = dp[i][<span class="number">1</span>] + dp[i][<span class="number">4</span>]*<span class="number">2</span></span><br><span class="line">dp[i+<span class="number">1</span>][<span class="number">5</span>] = dp[i][<span class="number">3</span>] + dp[i][<span class="number">4</span>] + dp[i][<span class="number">5</span>]*<span class="number">2</span></span><br></pre></td></tr></table></figure></p>
-<p>&nbsp; 因为我们要求的是满足条件的有趣的数，所以输出dp[i+1][5]即可这里我们需要理解求出状态0-4的目的是因为状态5的求解是和其有关<br>&nbsp; 需要注意的是既然题目给出的数据很大，所以最好都用long long数据类型<br>&nbsp; 源代码如下：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> MOD 1000000007</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> n;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> dp[<span class="number">1010</span>][<span class="number">6</span>];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">long</span> <span class="keyword">long</span> i=<span class="number">0</span>; i&lt;n; i++)&#123;</span><br><span class="line">         dp[i+<span class="number">1</span>][<span class="number">0</span>] = <span class="number">1</span>;            <span class="comment">//要想保持只能一直填2</span></span><br><span class="line">         dp[i+<span class="number">1</span>][<span class="number">1</span>] = (dp[i][<span class="number">0</span>] + dp[i][<span class="number">1</span>]*<span class="number">2</span>) % MOD;</span><br><span class="line">         dp[i+<span class="number">1</span>][<span class="number">2</span>] = (dp[i][<span class="number">0</span>] + dp[i][<span class="number">2</span>]) % MOD;</span><br><span class="line">         dp[i+<span class="number">1</span>][<span class="number">3</span>] = (dp[i][<span class="number">1</span>] + dp[i][<span class="number">2</span>] + dp[i][<span class="number">3</span>]*<span class="number">2</span>) % MOD;</span><br><span class="line">         dp[i+<span class="number">1</span>][<span class="number">4</span>] = (dp[i][<span class="number">1</span>] + dp[i][<span class="number">4</span>]*<span class="number">2</span>) % MOD;</span><br><span class="line">         dp[i+<span class="number">1</span>][<span class="number">5</span>] = (dp[i][<span class="number">3</span>] + dp[i][<span class="number">4</span>] + dp[i][<span class="number">5</span>]*<span class="number">2</span>) % MOD;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; dp[n][<span class="number">5</span>] &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>安装环境：Ubuntu 16.04<br>GO语言版本：1.9</p>
+<hr>
+<h2 id="1-安装curl"><a href="#1-安装curl" class="headerlink" title="1. 安装curl"></a>1. 安装curl</h2><p>1.以下两个指令用于安装openssl</p>
+<pre><code>$sudo1 apt-get install openssl
+$sudo apt-get isntall libssl-dev
+</code></pre><p>2.下载curl包并安装</p>
+<pre><code>用apt-get install和手动安装都可
+</code></pre><a id="more"></a>
+<hr>
+<h2 id="2-安装docker和docker-compose"><a href="#2-安装docker和docker-compose" class="headerlink" title="2. 安装docker和docker-compose"></a>2. 安装docker和docker-compose</h2><p>1.下载文件的url</p>
+<pre><code>https://download.docker.com/linux/ubuntu/dists/
+</code></pre><p>2.解压验证docker是否安装成功</p>
+<pre><code>$sudo dpkg -i /DebFile
+$sudo docker run hello-world
+</code></pre><p>3.安装docker-compose</p>
+<pre><code>$sudo curl -L https://github.com/docker/compose/releases/download/1.21.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+$sudo chmod +x /usr/local/bin/docker-compose
+</code></pre><hr>
+<h2 id="3-安装go语言"><a href="#3-安装go语言" class="headerlink" title="3. 安装go语言"></a>3. 安装go语言</h2><p>1.命令行一口气安装go语言</p>
+<pre><code>$curl -O https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz  
+$tar -C /usr/local -zxvf go1.9.linux-amd64.tar.gz  
+$mkdir -p ~/go/src  
+$echo &quot;export GOPATH=\$HOME/go&quot; &gt;&gt; ~/.bashrc  
+$echo &quot;export PATH=\$PATH:\$GOPATH/bin:/usr/local/go/bin&quot; &gt;&gt; ~/.bashrc  
+$source ~/.bashrc  
+$go version
+</code></pre><p>　这里需要注意的是go的环境变量配置在当前用户的环境变量文件<code>~/.bashrc</code>中，一下两条指令需要在sudo的权限下运行，这时只需要在命令行先敲入<code>sudo -s</code>即可，不必单独配置系统环境变量。</p>
+<p>2.为编写chaincode安装必要环境</p>
+<pre><code># go get -u --tags nopkcs11 github.com/hyperledger/fabric/core/chaincode/shim
+第一句如果报错： 
+_go: missing Git command. See https://golang.org/s/gogetcmd
+package github.com/hyperledger/fabric/core/chaincode/shim: exec: &quot;git&quot;: executable file not found in $PATH_
+则使用`apt install git`安装`git`；
+如果继续报错：
+_# cd .; 
+error: RPC failed; curl 56 GnuTLS recv error (-54): Error in the pull function.
+fatal: The remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+package github.com/hyperledger/fabric/core/chaincode/shim: exit status 128_
+输入指令`git config --global http.postBuffer 524288000`
+
+go build --tags nopkcs11
+sudo apt install libtool libltdl-dev
+</code></pre><hr>
+<h2 id="4-下载docker镜像和fabric的可执行文件"><a href="#4-下载docker镜像和fabric的可执行文件" class="headerlink" title="4. 下载docker镜像和fabric的可执行文件"></a>4. 下载docker镜像和fabric的可执行文件</h2><p><em>文件s.sh</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># Copyright IBM Corp. All Rights Reserved.</span></span><br><span class="line"><span class="comment"># SPDX-License-Identifier: Apache-2.0</span></span><br><span class="line"><span class="comment"># current version of fabric released</span></span><br><span class="line"><span class="built_in">export</span> VERSION=<span class="variable">$&#123;1:-1.0.6&#125;</span></span><br><span class="line"><span class="comment"># current version of fabric-ca released</span></span><br><span class="line"><span class="built_in">export</span> CA_VERSION=<span class="variable">$&#123;2:-$VERSION&#125;</span></span><br><span class="line"><span class="built_in">export</span> ARCH=$(<span class="built_in">echo</span> <span class="string">"<span class="variable">$(uname -s|tr '[:upper:]' '[:lower:]'|sed 's/mingw64_nt.*/windows/')</span>-<span class="variable">$(uname -m | sed 's/x86_64/amd64/g')</span>"</span> | awk <span class="string">'&#123;print tolower($0)&#125;'</span>)</span><br><span class="line"><span class="comment">#Set MARCH variable i.e ppc64le,s390x,x86_64,i386</span></span><br><span class="line">MARCH=`uname -m`</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">dockerFabricPull</span></span>() &#123;</span><br><span class="line">  <span class="built_in">local</span> FABRIC_TAG=<span class="variable">$1</span></span><br><span class="line">  <span class="keyword">for</span> IMAGES <span class="keyword">in</span> peer orderer couchdb ccenv javaenv kafka zookeeper tools; <span class="keyword">do</span></span><br><span class="line">      <span class="built_in">echo</span> <span class="string">"==&gt; FABRIC IMAGE: <span class="variable">$IMAGES</span>"</span></span><br><span class="line">      <span class="built_in">echo</span></span><br><span class="line">      docker pull hyperledger/fabric-<span class="variable">$IMAGES</span>:<span class="variable">$FABRIC_TAG</span></span><br><span class="line">      docker tag hyperledger/fabric-<span class="variable">$IMAGES</span>:<span class="variable">$FABRIC_TAG</span> hyperledger/fabric-<span class="variable">$IMAGES</span></span><br><span class="line">  <span class="keyword">done</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">dockerCaPull</span></span>() &#123;</span><br><span class="line">      <span class="built_in">local</span> CA_TAG=<span class="variable">$1</span></span><br><span class="line">      <span class="built_in">echo</span> <span class="string">"==&gt; FABRIC CA IMAGE"</span></span><br><span class="line">      <span class="built_in">echo</span></span><br><span class="line">      docker pull hyperledger/fabric-ca:<span class="variable">$CA_TAG</span></span><br><span class="line">      docker tag hyperledger/fabric-ca:<span class="variable">$CA_TAG</span> hyperledger/fabric-ca</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">: <span class="variable">$&#123;CA_TAG:="$MARCH-$CA_VERSION"&#125;</span></span><br><span class="line">: <span class="variable">$&#123;FABRIC_TAG:="$MARCH-$VERSION"&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"===&gt; Downloading platform binaries"</span></span><br><span class="line">curl https://nexus.hyperledger.org/content/repositories/releases/org/hyperledger/fabric/hyperledger-fabric/<span class="variable">$&#123;ARCH&#125;</span>-<span class="variable">$&#123;VERSION&#125;</span>/hyperledger-fabric-<span class="variable">$&#123;ARCH&#125;</span>-<span class="variable">$&#123;VERSION&#125;</span>.tar.gz | tar xz</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"===&gt; Pulling fabric Images"</span></span><br><span class="line">dockerFabricPull <span class="variable">$&#123;FABRIC_TAG&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"===&gt; Pulling fabric ca Image"</span></span><br><span class="line">dockerCaPull <span class="variable">$&#123;CA_TAG&#125;</span></span><br><span class="line"><span class="built_in">echo</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"===&gt; List out hyperledger docker images"</span></span><br><span class="line">docker images | grep hyperledger*</span><br></pre></td></tr></table></figure>
 
       
 
@@ -234,15 +254,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">算法基础</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">区块链</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">c语言</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">动态规划</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Ubuntu</a>
         		</li>
       		
 		</ul>
@@ -254,7 +270,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/CCF//" class="article-tag-list-link color4">CCF</a>
+        			<a href="/categories/环境配置//" class="article-tag-list-link color5">环境配置</a>
         		</li>
       		
 		</ul>
@@ -309,7 +325,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/08/02/CCF-201312-4/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/06/08/保研机试/环境配置篇-Ubuntu16.04下配置Docker和Go语言/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -323,18 +339,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/08/06/算法-排序/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/07/25/保研机试/算法-a+b之大数加法/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          算法篇-排序合集
+          算法篇-a+b大数加法
         
       </div>
     </a>
   
   
-    <a href="/2018/07/25/机器学习篇-Clustering K-means & Gaussian Mixture Model/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">机器学习篇-Clustering K-means &amp; Guassian Mixture Model</div>
+    <a href="/2018/05/14/引言/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如何搭建我的github+hexo博客</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -361,7 +377,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装curl"><span class="toc-number">1.</span> <span class="toc-text">1. 安装curl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-安装docker和docker-compose"><span class="toc-number">2.</span> <span class="toc-text">2. 安装docker和docker-compose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-安装go语言"><span class="toc-number">3.</span> <span class="toc-text">3. 安装go语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-下载docker镜像和fabric的可执行文件"><span class="toc-number">4.</span> <span class="toc-text">4. 下载docker镜像和fabric的可执行文件</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -392,7 +408,7 @@
             <div id="toc-article" class="toc-article">
                 <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
                 <strong class="toc-title">文章目录</strong>
-                
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装curl"><span class="toc-number">1.</span> <span class="toc-text">1. 安装curl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-安装docker和docker-compose"><span class="toc-number">2.</span> <span class="toc-text">2. 安装docker和docker-compose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-安装go语言"><span class="toc-number">3.</span> <span class="toc-text">3. 安装go语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-下载docker镜像和fabric的可执行文件"><span class="toc-number">4.</span> <span class="toc-text">4. 下载docker镜像和fabric的可执行文件</span></a></li></ol>
            </div>
            <script type="text/javascript">
             function showToc(){
@@ -418,7 +434,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 TonyWu199
+    		&copy; 2019 TonyWu199
     	</div>
        <!--统计start-->
       <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
@@ -511,10 +527,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">总结</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
@@ -523,11 +535,31 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">总结</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">聚类</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">算法基础</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">c语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">BFS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">DFS</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -543,23 +575,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">聚类</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">BFS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">DFS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">递归</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">深度学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">优化算法</a>
               </li>
             
             <div class="clearfix"></div>

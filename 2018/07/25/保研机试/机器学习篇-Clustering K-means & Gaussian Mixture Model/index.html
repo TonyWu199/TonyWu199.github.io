@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>学习汇总 | Mr.Wu的博客</title>
+  <title>机器学习篇-Clustering K-means &amp; Guassian Mixture Model | Mr.Wu的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.牛客网· 把华科考研复试题目刷完，里面题目比较适合手生的时候练手感，没有什么特别难的算法题。只是稍微涉及到了dp、二叉树、BFS、DFS等方面的知识。其中题目印象比较深的是通过前序+中序来获得整个二叉树的算法、模拟大数加法的a+b、以及这期间把各种排序算法都实现了一边，其中插入排序用的最多。 2.CCF· 这段时间把CCF的第4题练习了一下，对DFS，BFS，Dijkstra，floyd算法">
-<meta name="keywords" content="总结">
+  <meta name="description" content="1.K-means&amp;#160; 暂时放上两篇较好的博客地址1地址2&amp;#160; 代码实现在后面补上 2.GMM&amp;#160; 较好的博文地址">
+<meta name="keywords" content="机器学习,聚类">
 <meta property="og:type" content="article">
-<meta property="og:title" content="学习汇总">
-<meta property="og:url" content="http://yoursite.com/2018/09/01/8.20-9.1题目汇总/index.html">
+<meta property="og:title" content="机器学习篇-Clustering K-means &amp; Guassian Mixture Model">
+<meta property="og:url" content="http://yoursite.com/2018/07/25/保研机试/机器学习篇-Clustering K-means & Gaussian Mixture Model/index.html">
 <meta property="og:site_name" content="Mr.Wu的博客">
-<meta property="og:description" content="1.牛客网· 把华科考研复试题目刷完，里面题目比较适合手生的时候练手感，没有什么特别难的算法题。只是稍微涉及到了dp、二叉树、BFS、DFS等方面的知识。其中题目印象比较深的是通过前序+中序来获得整个二叉树的算法、模拟大数加法的a+b、以及这期间把各种排序算法都实现了一边，其中插入排序用的最多。 2.CCF· 这段时间把CCF的第4题练习了一下，对DFS，BFS，Dijkstra，floyd算法">
+<meta property="og:description" content="1.K-means&amp;#160; 暂时放上两篇较好的博客地址1地址2&amp;#160; 代码实现在后面补上 2.GMM&amp;#160; 较好的博文地址">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-09-01T09:58:31.771Z">
+<meta property="og:updated_time" content="2018-08-03T02:33:54.403Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学习汇总">
-<meta name="twitter:description" content="1.牛客网· 把华科考研复试题目刷完，里面题目比较适合手生的时候练手感，没有什么特别难的算法题。只是稍微涉及到了dp、二叉树、BFS、DFS等方面的知识。其中题目印象比较深的是通过前序+中序来获得整个二叉树的算法、模拟大数加法的a+b、以及这期间把各种排序算法都实现了一边，其中插入排序用的最多。 2.CCF· 这段时间把CCF的第4题练习了一下，对DFS，BFS，Dijkstra，floyd算法">
+<meta name="twitter:title" content="机器学习篇-Clustering K-means &amp; Guassian Mixture Model">
+<meta name="twitter:description" content="1.K-means&amp;#160; 暂时放上两篇较好的博客地址1地址2&amp;#160; 代码实现在后面补上 2.GMM&amp;#160; 较好的博文地址">
   
   
     <link rel="icon" href="/favicon.png">
@@ -143,20 +143,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-8.20-9.1题目汇总" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-保研机试/机器学习篇-Clustering K-means &amp; Gaussian Mixture Model" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      学习汇总
+      机器学习篇-Clustering K-means &amp; Guassian Mixture Model
     </h1>
   
 
         
-        <a href="/2018/09/01/8.20-9.1题目汇总/" class="archive-article-date">
-  	<time datetime="2018-09-01T09:46:07.186Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-01</time>
+        <a href="/2018/07/25/保研机试/机器学习篇-Clustering K-means & Gaussian Mixture Model/" class="archive-article-date">
+  	<time datetime="2018-07-25T08:17:09.861Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-25</time>
 </a>
         
       </header>
@@ -164,9 +164,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="1-牛客网"><a href="#1-牛客网" class="headerlink" title="1.牛客网"></a>1.牛客网</h2><p>· 把华科考研复试题目刷完，里面题目比较适合手生的时候练手感，没有什么特别难的算法题。只是稍微涉及到了dp、二叉树、BFS、DFS等方面的知识。其中题目印象比较深的是<strong>通过前序+中序来获得整个二叉树的算法</strong>、<strong>模拟大数加法的a+b</strong>、以及这期间把各种排序算法都实现了一边，其中插入排序用的最多。</p>
-<h2 id="2-CCF"><a href="#2-CCF" class="headerlink" title="2.CCF"></a>2.CCF</h2><p>· 这段时间把CCF的第4题练习了一下，对DFS，BFS，Dijkstra，floyd算法都做了实现，并且完成了了题目代码。 这里学习到的经验就是CCF题目中建立邻接表比建立临界矩阵更方便，并且在定义的时候，最好不要只定义成题目的n+1，而是设置一个题目给出的最大值作为存储的上限，这样可以把存储变量设置成全局变量，避免在函数中调用二维数组的麻烦。<br>· 对于DFS和Dijkstra算法的作用有了一定的了解，Dijkstra算法主要用于求解最短距离，例如最小疲劳值问题；而DFS算法则更多地用于遍历所有情况，例如八皇后问题。</p>
-<h2 id="3-下一步"><a href="#3-下一步" class="headerlink" title="3.下一步"></a>3.下一步</h2><p>· 继续CCF第4题图论的算法练习，同时巩固c语言对基本数据结构的实现。然后还要对CCf第3题中c++的各种字符串操作运用熟练！。最后有时间可以再复习一下8月中旬学习的动态规划算法。</p>
+<h2 id="1-K-means"><a href="#1-K-means" class="headerlink" title="1.K-means"></a>1.K-means</h2><p>&#160; 暂时放上两篇较好的博客<a href="https://blog.csdn.net/taoyanqi8932/article/details/53727841" target="_blank" rel="noopener">地址1</a><a href="http://blog.pluskid.org/?p=17" target="_blank" rel="noopener">地址2</a><br>&#160; 代码实现在后面补上</p>
+<h2 id="2-GMM"><a href="#2-GMM" class="headerlink" title="2.GMM"></a>2.GMM</h2><p>&#160; 较好的博文<a href="https://blog.csdn.net/jinping_shi/article/details/59613054" target="_blank" rel="noopener">地址</a></p>
 
       
 
@@ -211,7 +210,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">总结</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">机器学习</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">聚类</a>
         		</li>
       		
 		</ul>
@@ -223,7 +226,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/总结//" class="article-tag-list-link color3">总结</a>
+        			<a href="/categories/ML//" class="article-tag-list-link color3">ML</a>
         		</li>
       		
 		</ul>
@@ -278,7 +281,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/09/01/8.20-9.1题目汇总/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/25/保研机试/机器学习篇-Clustering K-means & Gaussian Mixture Model/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -292,9 +295,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2018/08/02/保研机试/CCF-201312-4/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          CCF篇-201312-4 有趣的数
+        
+      </div>
+    </a>
   
-    <a href="/2018/08/15/算法-POJ1321 DFS/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">算法篇-POJ1321 DFS</div>
+  
+    <a href="/2018/07/25/保研机试/算法-a+b之大数加法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">算法篇-a+b大数加法</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -321,7 +333,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-牛客网"><span class="toc-number">1.</span> <span class="toc-text">1.牛客网</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-CCF"><span class="toc-number">2.</span> <span class="toc-text">2.CCF</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-下一步"><span class="toc-number">3.</span> <span class="toc-text">3.下一步</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-K-means"><span class="toc-number">1.</span> <span class="toc-text">1.K-means</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-GMM"><span class="toc-number">2.</span> <span class="toc-text">2.GMM</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -352,7 +364,7 @@
             <div id="toc-article" class="toc-article">
                 <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
                 <strong class="toc-title">文章目录</strong>
-                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-牛客网"><span class="toc-number">1.</span> <span class="toc-text">1.牛客网</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-CCF"><span class="toc-number">2.</span> <span class="toc-text">2.CCF</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-下一步"><span class="toc-number">3.</span> <span class="toc-text">3.下一步</span></a></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-K-means"><span class="toc-number">1.</span> <span class="toc-text">1.K-means</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-GMM"><span class="toc-number">2.</span> <span class="toc-text">2.GMM</span></a></li></ol>
            </div>
            <script type="text/javascript">
             function showToc(){
@@ -378,7 +390,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 TonyWu199
+    		&copy; 2019 TonyWu199
     	</div>
        <!--统计start-->
       <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
@@ -471,10 +483,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">总结</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
@@ -483,11 +491,31 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">总结</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">聚类</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">算法基础</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">c语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">BFS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">DFS</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -503,23 +531,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">聚类</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">BFS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">DFS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">递归</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">深度学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">优化算法</a>
               </li>
             
             <div class="clearfix"></div>
